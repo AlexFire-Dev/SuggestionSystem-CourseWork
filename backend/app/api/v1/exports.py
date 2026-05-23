@@ -3,7 +3,7 @@ from datetime import date
 from fastapi import APIRouter, Query
 from fastapi.responses import Response
 
-from app.services.dwh_service import get_daily_summary, get_intraday_liquidity_state, get_market_fact_5m
+from app.services.dwh_service import get_daily_summary, get_intraday_liquidity_state, get_market_fact_5m, list_news_company_candidates
 from app.utils.csv_export import rows_to_csv
 
 router = APIRouter(prefix="/exports", tags=["exports"])
@@ -51,3 +51,22 @@ def export_daily_summary_csv(
     ticker_part = secid.upper() if secid else "all"
     date_part = trade_date.isoformat() if trade_date else "all"
     return _csv_response(rows, f"daily_summary_{ticker_part}_{date_part}.csv")
+
+
+@router.get("/news-company-candidates.csv")
+def export_news_company_candidates_csv(
+    secid: str | None = Query(default=None, description="Ticker, for example SBER"),
+    from_date: date | None = Query(default=None, description="From publication date"),
+    to_date: date | None = Query(default=None, description="To publication date"),
+    min_score: float | None = Query(default=None, ge=0.0, le=1.0),
+    limit: int = Query(default=5000, ge=1, le=5000),
+) -> Response:
+    rows = list_news_company_candidates(
+        secid=secid,
+        from_date=from_date,
+        to_date=to_date,
+        min_score=min_score,
+        limit=limit,
+    )
+    ticker_part = secid.upper() if secid else "all"
+    return _csv_response(rows, f"news_company_candidates_{ticker_part}.csv")

@@ -215,3 +215,167 @@ def get_available_market_states() -> list[dict[str, Any]]:
         ORDER BY intervals DESC
         """
     )
+
+
+def list_news_events(
+    secid: str | None = None,
+    from_date: date | None = None,
+    to_date: date | None = None,
+    limit: int | None = None,
+) -> list[dict[str, Any]]:
+    limit_value = _bounded_limit(limit)
+    params: dict[str, Any] = {"limit": limit_value}
+    where: list[str] = []
+
+    if from_date is not None:
+        where.append("n.published_date >= {from_date:Date}")
+        params["from_date"] = from_date.isoformat()
+    if to_date is not None:
+        where.append("n.published_date <= {to_date:Date}")
+        params["to_date"] = to_date.isoformat()
+    if secid:
+        where.append("n.news_id IN (SELECT news_id FROM dwh.news_company_candidates WHERE secid = {secid:String})")
+        params["secid"] = secid.upper()
+
+    where_sql = "WHERE " + " AND ".join(where) if where else ""
+    return _query(
+        f"""
+        SELECT
+            n.news_id,
+            n.published_date,
+            n.published_time,
+            n.published_at,
+            n.time_precision,
+            n.title,
+            n.body,
+            n.tags,
+            n.body_length,
+            n.tags_count,
+            n.title_is_missing,
+            n.loaded_at
+        FROM stg.v_news_events AS n
+        {where_sql}
+        ORDER BY n.published_date DESC, n.published_at DESC, n.news_id
+        LIMIT {{limit:UInt32}}
+        """,
+        params,
+    )
+
+
+def list_news_company_candidates(
+    secid: str | None = None,
+    from_date: date | None = None,
+    to_date: date | None = None,
+    min_score: float | None = None,
+    limit: int | None = None,
+) -> list[dict[str, Any]]:
+    limit_value = _bounded_limit(limit)
+    params: dict[str, Any] = {"limit": limit_value}
+    where: list[str] = []
+
+    if secid:
+        where.append("secid = {secid:String}")
+        params["secid"] = secid.upper()
+    if from_date is not None:
+        where.append("published_date >= {from_date:Date}")
+        params["from_date"] = from_date.isoformat()
+    if to_date is not None:
+        where.append("published_date <= {to_date:Date}")
+        params["to_date"] = to_date.isoformat()
+    if min_score is not None:
+        where.append("match_score >= {min_score:Float32}")
+        params["min_score"] = float(min_score)
+
+    where_sql = "WHERE " + " AND ".join(where) if where else ""
+    return _query(
+        f"""
+        SELECT
+            published_date,
+            published_time,
+            published_at,
+            time_precision,
+            news_id,
+            secid,
+            boardid,
+            shortname,
+            secname,
+            title,
+            tags,
+            match_method,
+            matched_field,
+            matched_value,
+            match_score,
+            match_confidence
+        FROM mart.v_news_company_candidates
+        {where_sql}
+        ORDER BY published_date DESC, match_score DESC, secid
+        LIMIT {{limit:UInt32}}
+        """,
+        params,
+    )
+
+
+def list_ticker_dictionary(secid: str | None = None, query: str | None = None, limit: int | None = None) -> list[dict[str, Any]]:
+    limit_value = _bounded_limit(limit)
+    params: dict[str, Any] = {"limit": limit_value}
+    where: list[str] = []
+    if secid:
+        where.append("secid = {secid:String}")
+        params["secid"] = secid.upper()
+    if query:
+        where.append("positionCaseInsensitive(alias, {query:String}) > 0")
+        params["query"] = query
+    where_sql = "WHERE " + " AND ".join(where) if where else ""
+    return _query(
+        f"""
+        SELECT
+            secid,
+            boardid,
+            alias,
+            alias_normalized,
+            alias_type,
+            source,
+            weight,
+            created_at
+        FROM dwh.news_ticker_dictionary
+        {where_sql}
+        ORDER BY secid, weight DESC, length(alias_normalized) DESC
+        LIMIT {{limit:UInt32}}
+        """,
+        params,
+    )
+
+
+def list_news_criticality(
+    secid: str | None = None,
+    from_date: date | None = None,
+    to_date: date | None = None,
+    min_criticality: float | None = None,
+    limit: int | None = None,
+) -> list[dict[str, Any]]:
+    limit_value = _bounded_limit(limit)
+    params: dict[str, Any] = {"limit": limit_value}
+    where: list[str] = []
+    if secid:
+        where.append("secid = {secid:String}")
+        params["secid"] = secid.upper()
+    if from_date is not None:
+        where.append("published_date >= {from_date:Date}")
+        params["from_date"] = from_date.isoformat()
+    if to_date is not None:
+        where.append("published_date <= {to_date:Date}")
+        params["to_date"] = to_date.isoformat()
+    if min_criticality is not None:
+        where.append("criticality_score >= {min_criticality:Float32}")
+        params["min_criticality"] = float(min_criticality)
+    where_sql = "WHERE " + " AND ".join(where) if where else ""
+    return _query(
+        f"""
+        SELECT *
+        FROM mart.v_news_criticality
+        {where_sql}
+        ORDER BY published_date DESC, criticality_score DESC, secid
+        LIMIT {{limit:UInt32}}
+        """,
+        params,
+    )
