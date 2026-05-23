@@ -3,7 +3,7 @@ from datetime import date
 from fastapi import APIRouter, Query
 from fastapi.responses import Response
 
-from app.services.dwh_service import get_daily_summary, get_intraday_liquidity_state, get_market_fact_5m, list_news_company_candidates
+from app.services.dwh_service import get_daily_summary, get_intraday_liquidity_state, get_market_fact_5m, list_news_company_candidates, list_news_criticality
 from app.utils.csv_export import rows_to_csv
 
 router = APIRouter(prefix="/exports", tags=["exports"])
@@ -70,3 +70,22 @@ def export_news_company_candidates_csv(
     )
     ticker_part = secid.upper() if secid else "all"
     return _csv_response(rows, f"news_company_candidates_{ticker_part}.csv")
+
+
+@router.get("/news-criticality.csv")
+def export_news_criticality_csv(
+    secid: str | None = Query(default=None, description="Ticker, for example SBER"),
+    from_date: date | None = Query(default=None, description="From publication date"),
+    to_date: date | None = Query(default=None, description="To publication date"),
+    min_criticality: float | None = Query(default=None, ge=0.0, le=1.0),
+    limit: int = Query(default=5000, ge=1, le=5000),
+) -> Response:
+    rows = list_news_criticality(
+        secid=secid,
+        from_date=from_date,
+        to_date=to_date,
+        min_criticality=min_criticality,
+        limit=limit,
+    )
+    ticker_part = secid.upper() if secid else "all"
+    return _csv_response(rows, f"news_criticality_{ticker_part}.csv")

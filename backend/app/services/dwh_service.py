@@ -379,3 +379,76 @@ def list_news_criticality(
         """,
         params,
     )
+
+def list_news_criticality_pending(
+    secid: str | None = None,
+    from_date: date | None = None,
+    to_date: date | None = None,
+    min_score: float | None = None,
+    limit: int | None = None,
+) -> list[dict[str, Any]]:
+    limit_value = _bounded_limit(limit)
+    params: dict[str, Any] = {"limit": limit_value}
+    where: list[str] = []
+    if secid:
+        where.append("secid = {secid:String}")
+        params["secid"] = secid.upper()
+    if from_date is not None:
+        where.append("published_date >= {from_date:Date}")
+        params["from_date"] = from_date.isoformat()
+    if to_date is not None:
+        where.append("published_date <= {to_date:Date}")
+        params["to_date"] = to_date.isoformat()
+    if min_score is not None:
+        where.append("match_score >= {min_score:Float32}")
+        params["min_score"] = float(min_score)
+    where_sql = "WHERE " + " AND ".join(where) if where else ""
+    return _query(
+        f"""
+        SELECT
+            published_date,
+            published_time,
+            published_at,
+            time_precision,
+            news_id,
+            secid,
+            boardid,
+            shortname,
+            secname,
+            title,
+            tags,
+            match_method,
+            matched_field,
+            matched_value,
+            match_score,
+            match_confidence
+        FROM mart.v_news_criticality_pending
+        {where_sql}
+        ORDER BY published_date DESC, match_score DESC, secid
+        LIMIT {{limit:UInt32}}
+        """,
+        params,
+    )
+
+
+def list_news_llm_runs(limit: int | None = None) -> list[dict[str, Any]]:
+    limit_value = _bounded_limit(limit)
+    return _query(
+        """
+        SELECT
+            run_id,
+            provider,
+            model_name,
+            prompt_version,
+            started_at,
+            finished_at,
+            status,
+            records_processed,
+            records_inserted,
+            error_message
+        FROM dwh.news_llm_runs
+        ORDER BY started_at DESC
+        LIMIT {limit:UInt32}
+        """,
+        {"limit": limit_value},
+    )

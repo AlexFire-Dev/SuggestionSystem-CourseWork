@@ -6,6 +6,8 @@ from app.services.dwh_service import (
     list_news_company_candidates,
     list_news_criticality,
     list_news_events,
+    list_news_criticality_pending,
+    list_news_llm_runs,
     list_ticker_dictionary,
 )
 
@@ -63,3 +65,27 @@ def get_news_criticality(
         min_criticality=min_criticality,
         limit=limit,
     )
+
+
+@router.get("/criticality/pending")
+def get_news_criticality_pending(
+    secid: str | None = Query(default=None, description="Ticker, for example SBER"),
+    from_date: date | None = Query(default=None, description="From publication date"),
+    to_date: date | None = Query(default=None, description="To publication date"),
+    min_score: float | None = Query(default=None, ge=0.0, le=1.0),
+    limit: int = Query(default=100, ge=1, le=5000),
+):
+    return list_news_criticality_pending(
+        secid=secid,
+        from_date=from_date,
+        to_date=to_date,
+        min_score=min_score,
+        limit=limit,
+    )
+
+
+@router.get("/llm-runs")
+def get_news_llm_runs(
+    limit: int = Query(default=100, ge=1, le=5000),
+):
+    return list_news_llm_runs(limit=limit)

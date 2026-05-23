@@ -9,6 +9,8 @@ from airflow.operators.bash import BashOperator
 PROJECT_DIR = Path("/opt/airflow/project")
 NEWS_FILE = os.getenv("NEWS_FILE", "/opt/airflow/project/news_input/news.csv")
 NEWS_MATCH_MIN_SCORE = os.getenv("NEWS_MATCH_MIN_SCORE", "0.65")
+LLM_MIN_MATCH_SCORE = os.getenv("LLM_MIN_MATCH_SCORE", NEWS_MATCH_MIN_SCORE)
+LLM_ASSESS_LIMIT = os.getenv("LLM_ASSESS_LIMIT", "100")
 
 DEFAULT_ARGS = {
     "owner": "moex-coursework",
@@ -19,12 +21,12 @@ DEFAULT_ARGS = {
 
 with DAG(
     dag_id="moex_news_load_and_match",
-    description="Load news, build ticker dictionary from MOEX instruments and match news to tickers",
+    description="Load news, match news to tickers and assess news criticality with LLM",
     start_date=pendulum.datetime(2026, 1, 1, tz="Europe/Moscow"),
     schedule=None,
     catchup=False,
     default_args=DEFAULT_ARGS,
-    tags=["moex", "news", "dwh", "ticker-matching"],
+    tags=["moex", "news", "dwh", "ticker-matching", "llm"],
 ) as dag:
     apply_migrations = BashOperator(
         task_id="apply_clickhouse_migrations",
@@ -54,4 +56,14 @@ with DAG(
         ),
     )
 
-    apply_migrations >> build_ticker_dictionary >> load_news >> extract_news_tickers
+    assess_news_criticality = BashOperator(
+        task_id="assess_news_criticality_llm",
+        bash_command=(
+            f"cd {PROJECT_DIR} && "
+            f"python scripts/assess_news_llm.py "
+            f"--min-score {LLM_MIN_MATCH_SCORE} "
+            f"--limit {LLM_ASSESS_LIMIT}"
+        ),
+    )
+
+    apply_migrations >> build_ticker_dictionary >> load_news >> extract_news_tickers >> assess_news_criticality
