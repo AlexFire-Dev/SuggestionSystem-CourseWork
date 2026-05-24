@@ -315,6 +315,86 @@
         grid-template-columns: 1fr;
       }
     }
+
+    .ml-card {
+      margin-bottom: 18px;
+    }
+
+    .ml-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .ml-grid div {
+      border-radius: 16px;
+      background: #f8fafc;
+      padding: 14px;
+    }
+
+    .ml-grid span,
+    .ml-grid small {
+      display: block;
+      color: #64748b;
+      font-size: 12px;
+    }
+
+    .ml-grid strong {
+      display: block;
+      margin: 4px 0;
+      font-size: 22px;
+    }
+
+    .sentiment-scale {
+      position: relative;
+      height: 14px;
+      margin-top: 18px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #fee2e2 0%, #f8fafc 50%, #dcfce7 100%);
+      border: 1px solid #e2e8f0;
+      overflow: hidden;
+    }
+
+    .sentiment-zero {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 2px;
+      height: 100%;
+      background: #64748b;
+      opacity: 0.8;
+    }
+
+    .sentiment-marker {
+      position: absolute;
+      top: -4px;
+      width: 8px;
+      height: 20px;
+      border-radius: 999px;
+      background: #0f172a;
+      transform: translateX(-50%);
+    }
+
+    .ml-explain {
+      margin-top: 12px;
+      color: #475569;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 1000px) {
+      .ml-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 620px) {
+      .ml-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -526,6 +606,113 @@
         stress_intervals: rows.filter(row => row.market_state === "liquidity_stress").length,
         total_trades: rows.reduce((sum, row) => sum + Number(row.trades || 0), 0)
       };
+    }
+
+
+    function clamp(value, min, max) {
+      return Math.max(min, Math.min(max, value));
+    }
+
+    function sigmoid(value) {
+      return 1 / (1 + Math.exp(-value));
+    }
+
+    function meanNumber(rows, key) {
+      const values = rows
+        .map(row => Number(row[key]))
+        .filter(Number.isFinite);
+
+      if (!values.length) return 0;
+
+      return values.reduce((sum, value) => sum + value, 0) / values.length;
+    }
+
+    function computeNewsImpact(newsRows) {
+      if (!newsRows.length) return 0;
+
+      return newsRows.reduce((sum, item) => {
+        const criticality = Number(item.criticality_score || 0);
+        const sentiment = String(item.sentiment || "unknown");
+
+        let direction = 0;
+
+        if (sentiment === "positive") {
+          direction = 1;
+        } else if (sentiment === "negative") {
+          direction = -1;
+        } else if (sentiment === "mixed") {
+          direction = -0.25;
+        }
+
+        return sum + criticality * direction;
+      }, 0) / newsRows.length;
+    }
+
+    function computeMarketSentiment(marketRows, newsRows, summary) {
+      if (!marketRows.length) {
+        return {
+          label: "unknown",
+          score: 0,
+          confidence: 0,
+          spreadPressure: 0,
+          bookImbalance: 0,
+          tradeDirection: 0,
+          stressRatio: 0,
+          newsImpact: 0,
+          description: "No market data for ML baseline."
+        };
+      }
+
+      const recent = marketRows.slice(-12);
+      const avgSpreadAll = meanNumber(marketRows, "spread_bbo") || Number(summary && summary.avg_spread_bbo) || 1;
+      const avgSpreadRecent = meanNumber(recent, "spread_bbo");
+
+      const spreadPressure = clamp((avgSpreadRecent - avgSpreadAll) / Math.max(avgSpreadAll, 0.0001), -1, 1);
+      const bookImbalance = clamp(meanNumber(recent, "book_vol_imbalance"), -1, 1);
+      const tradeDirection = clamp(meanNumber(recent, "trade_direction_imbalance"), -1, 1);
+      const stressRatio = recent.filter(row => row.market_state === "liquidity_stress").length / recent.length;
+      const newsImpact = clamp(computeNewsImpact(newsRows), -1, 1);
+
+      const rawScore =
+        0.45 * tradeDirection +
+        0.30 * bookImbalance -
+        0.40 * spreadPressure -
+        0.75 * stressRatio +
+        0.25 * newsImpact;
+
+      const score = clamp(2 * sigmoid(2.2 * rawScore) - 1, -1, 1);
+
+      let label = "neutral";
+
+      if (stressRatio >= 0.3 || spreadPressure >= 0.45) {
+        label = "stressed";
+      } else if (score >= 0.25) {
+        label = "bullish";
+      } else if (score <= -0.25) {
+        label = "bearish";
+      }
+
+      const confidence = clamp(0.25 + Math.abs(score) * 0.55 + stressRatio * 0.30, 0, 0.95);
+
+      return {
+        label,
+        score,
+        confidence,
+        spreadPressure,
+        bookImbalance,
+        tradeDirection,
+        stressRatio,
+        newsImpact,
+        description:
+          "Baseline model over recent spread pressure, order-book imbalance, trade direction, liquidity stress ratio and news impact."
+      };
+    }
+
+    function sentimentClass(label) {
+      if (label === "bullish") return "badge good";
+      if (label === "bearish" || label === "stressed") return "badge bad";
+      if (label === "neutral") return "badge info";
+      return "badge";
     }
 
     function candidateLevel(score) {
@@ -767,6 +954,8 @@
       const selected = getSelectedNews();
       const windowRows = getMarketWindow();
       const stats = getReactionStats(windowRows);
+      const sentiment = computeMarketSentiment(state.market, state.news, state.summary);
+      const sentimentMarkerLeft = ((sentiment.score + 1) * 50).toFixed(1);
       const states = [...new Set(state.market.map(item => item.market_state).filter(Boolean))];
 
       const newsHtml = state.news.length
@@ -843,6 +1032,64 @@
               <span>Avg spread BBO</span>
               <strong>${formatNumber(state.summary && state.summary.avg_spread_bbo)}</strong>
             </div>
+          </section>
+
+          <section class="card ml-card">
+            <div class="section-title-row">
+              <div>
+                <h2>Overall Market Sentiment ML</h2>
+                <p class="muted">${escapeHtml(sentiment.description)}</p>
+              </div>
+              <span class="${sentimentClass(sentiment.label)}">${escapeHtml(sentiment.label)}</span>
+            </div>
+
+            <div class="ml-grid">
+              <div>
+                <span>Sentiment score</span>
+                <strong>${sentiment.score.toFixed(2)}</strong>
+                <small>-1 bearish / +1 bullish</small>
+              </div>
+
+              <div>
+                <span>Confidence</span>
+                <strong>${formatPercent(sentiment.confidence)}</strong>
+                <small>model certainty</small>
+              </div>
+
+              <div>
+                <span>Spread pressure</span>
+                <strong>${sentiment.spreadPressure.toFixed(2)}</strong>
+                <small>higher means worse liquidity</small>
+              </div>
+
+              <div>
+                <span>Book imbalance</span>
+                <strong>${sentiment.bookImbalance.toFixed(2)}</strong>
+                <small>bid/ask pressure</small>
+              </div>
+
+              <div>
+                <span>Trade direction</span>
+                <strong>${sentiment.tradeDirection.toFixed(2)}</strong>
+                <small>buy/sell activity</small>
+              </div>
+
+              <div>
+                <span>Stress ratio</span>
+                <strong>${formatPercent(sentiment.stressRatio)}</strong>
+                <small>recent stressed intervals</small>
+              </div>
+            </div>
+
+            <div class="sentiment-scale">
+              <div class="sentiment-zero"></div>
+              <div class="sentiment-marker" style="left:${sentimentMarkerLeft}%"></div>
+            </div>
+
+            <p class="ml-explain">
+              Model v1 is an explainable baseline: positive trade direction and bid-side imbalance increase the score,
+              while wider spread and liquidity stress reduce it. News criticality slightly shifts the score according to event sentiment.
+            </p>
           </section>
 
           <section class="layout">
