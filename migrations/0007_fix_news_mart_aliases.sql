@@ -67,7 +67,10 @@ SELECT
     a.reason AS reason,
     a.model_name AS model_name,
     a.prompt_version AS prompt_version,
-    a.assessed_at AS assessed_at
+
+    -- In dwh.news_llm_assessment the timestamp column is created_at.
+    -- The mart exposes it as assessed_at for API compatibility.
+    a.created_at AS assessed_at
 FROM mart.v_news_company_candidates AS c
 INNER JOIN dwh.news_llm_assessment AS a
     ON c.news_id = a.news_id
@@ -95,13 +98,7 @@ SELECT
     c.matched_field AS matched_field,
     c.matched_value AS matched_value
 FROM mart.v_news_company_candidates AS c
-LEFT JOIN
-(
-    SELECT DISTINCT
-        news_id AS news_id,
-        secid AS secid
-    FROM dwh.news_llm_assessment
-) AS a
+LEFT JOIN dwh.news_llm_assessment AS a
     ON c.news_id = a.news_id
    AND c.secid = a.secid
-WHERE a.news_id = '';
+WHERE ifNull(a.news_id, '') = '';
