@@ -69,26 +69,7 @@ SELECT
     a.prompt_version AS prompt_version,
     a.assessed_at AS assessed_at
 FROM mart.v_news_company_candidates AS c
-INNER JOIN
-(
-    SELECT
-        news_id AS news_id,
-        secid AS secid,
-        argMax(relevance_score, assessed_at) AS relevance_score,
-        argMax(criticality_score, assessed_at) AS criticality_score,
-        argMax(sentiment, assessed_at) AS sentiment,
-        argMax(event_type, assessed_at) AS event_type,
-        argMax(impact_horizon, assessed_at) AS impact_horizon,
-        argMax(confidence, assessed_at) AS confidence,
-        argMax(reason, assessed_at) AS reason,
-        argMax(model_name, assessed_at) AS model_name,
-        argMax(prompt_version, assessed_at) AS prompt_version,
-        max(assessed_at) AS assessed_at
-    FROM dwh.news_llm_assessment
-    GROUP BY
-        news_id,
-        secid
-) AS a
+INNER JOIN dwh.news_llm_assessment AS a
     ON c.news_id = a.news_id
    AND c.secid = a.secid;
 
