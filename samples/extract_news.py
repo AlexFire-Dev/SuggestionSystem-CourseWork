@@ -3,6 +3,13 @@ import ast
 
 import pandas as pd
 
+from pathlib import Path
+import tempfile
+
+
+MAX_OUTPUT_MB = 95
+MAX_OUTPUT_BYTES = MAX_OUTPUT_MB * 1024 * 1024
+
 
 INPUT_PATH = Path("news_collection.parquet")  # поменяй на свой parquet-файл
 OUTPUT_PATH = Path("news.csv")
@@ -111,11 +118,38 @@ def main():
     result = result[result["date"].str.strip() != ""]
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    result.to_csv(OUTPUT_PATH, index=False)
+
+    def save_csv_under_limit(df, output_path: Path, max_bytes: int) -> pd.DataFrame:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+        low = 0
+        high = len(df)
+        best = df.iloc[:0]
+
+        while low <= high:
+            mid = (low + high) // 2
+            candidate = df.iloc[:mid]
+
+            with tempfile.NamedTemporaryFile(suffix=".csv", delete=True) as tmp:
+                candidate.to_csv(tmp.name, index=False)
+                size = Path(tmp.name).stat().st_size
+
+            if size <= max_bytes:
+                best = candidate
+                low = mid + 1
+            else:
+                high = mid - 1
+
+        best.to_csv(output_path, index=False)
+        return best
+
+    saved = save_csv_under_limit(result, OUTPUT_PATH, MAX_OUTPUT_BYTES)
 
     print(f"Saved: {OUTPUT_PATH}")
-    print(f"Rows: {len(result)}")
-    print(result.head())
+    print(f"Rows before trim: {len(result)}")
+    print(f"Rows saved: {len(saved)}")
+    print(f"File size MB: {OUTPUT_PATH.stat().st_size / 1024 / 1024:.2f}")
+    print(saved.head())
 
 
 if __name__ == "__main__":
