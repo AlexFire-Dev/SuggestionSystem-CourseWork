@@ -12,6 +12,32 @@ from dotenv import load_dotenv
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 
+def to_float(value, default: float = 0.0) -> float:
+    if value is None:
+        return default
+    if value == "":
+        return default
+    if isinstance(value, str) and value.lower() in {"none", "null", "nan"}:
+        return default
+    return float(value)
+
+
+def to_int(value, default: int = 0) -> int:
+    if value is None:
+        return default
+    if value == "":
+        return default
+    if isinstance(value, str) and value.lower() in {"none", "null", "nan"}:
+        return default
+    return int(value)
+
+
+def to_str(value, default: str = "") -> str:
+    if value is None:
+        return default
+    return str(value)
+
+
 def get_client():
     load_dotenv(PROJECT_ROOT / ".env")
     return clickhouse_connect.get_client(
@@ -222,8 +248,8 @@ def load_tradestats(client, payload: dict):
             int(row["vol_s"]),
 
             float(row["disb"]),
-            float(row["pr_vwap_b"]),
-            float(row["pr_vwap_s"]),
+            to_float(row.get("pr_vwap_b")),
+            to_float(row.get("pr_vwap_s")),
 
             parse_dt(row["SYSTIME"]),
 
