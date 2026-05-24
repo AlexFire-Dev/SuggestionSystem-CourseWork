@@ -1,0 +1,11 @@
+node_modules
+dist
+src
+package.json
+package-lock.json
+tsconfig.json
+tsconfig.node.json
+tsconfig.tsbuildinfo
+vite.config.ts
+.env
+.env.example

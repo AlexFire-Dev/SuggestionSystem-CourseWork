@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOEX News Impact Dashboard</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #f8fafc;
+      color: #0f172a;
+      font-family: Inter, Arial, sans-serif;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 24px;
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-icon {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: #0f172a;
+      color: white;
+      font-weight: 800;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .muted {
+      margin-top: 4px;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .filters {
+      display: grid;
+      grid-template-columns: 110px 160px 150px 110px 100px;
+      align-items: end;
+      gap: 12px;
+    }
+
+    label span {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 12px;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      outline: none;
+    }
+
+    button,
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 10px 14px;
+      border: 0;
+      border-radius: 12px;
+      background: #0f172a;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button.secondary {
+      border: 1px solid #cbd5e1;
+      background: white;
+      color: #334155;
+    }
+
+    main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+    }
+
+    .banner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .warning {
+      border-color: #fde68a;
+      background: #fffbeb;
+      color: #92400e;
+    }
+
+    .error {
+      border-color: #fecdd3;
+      background: #fff1f2;
+      color: #9f1239;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .kpi span {
+      display: block;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .kpi strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 30px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 18px;
+    }
+
+    .news-list {
+      max-height: 760px;
+      overflow-y: auto;
+    }
+
+    .section-title-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .news-card {
+      display: block;
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 16px;
+      border: 1px solid #e2e8f0;
+      background: white;
+      color: #0f172a;
+      text-align: left;
+      border-radius: 16px;
+      cursor: pointer;
+    }
+
+    .news-card.active {
+      border-color: #0f172a;
+      background: #f8fafc;
+    }
+
+    .news-card strong {
+      display: block;
+      margin-top: 8px;
+      line-height: 1.3;
+    }
+
+    .news-card small {
+      display: block;
+      margin-top: 8px;
+      color: #64748b;
+    }
+
+    .news-card p {
+      margin-top: 8px;
+      color: #475569;
+      font-size: 14px;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      background: #f1f5f9;
+      color: #334155;
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .badge.good { background: #ecfdf5; color: #047857; }
+    .badge.warn { background: #fffbeb; color: #b45309; }
+    .badge.bad { background: #fff1f2; color: #be123c; }
+    .badge.info { background: #eff6ff; color: #1d4ed8; }
+
+    .content {
+      display: grid;
+      gap: 18px;
+    }
+
+    .reaction-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .reaction-grid div {
+      border-radius: 16px;
+      background: #f8fafc;
+      padding: 16px;
+    }
+
+    .reaction-grid span,
+    .reaction-grid small {
+      display: block;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    .reaction-grid strong {
+      display: block;
+      margin: 4px 0;
+      font-size: 24px;
+    }
+
+    .chart {
+      height: 360px;
+      margin-top: 22px;
+      border: 1px dashed #cbd5e1;
+      border-radius: 16px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .chart.small {
+      height: 300px;
+    }
+
+    .empty {
+      border: 1px dashed #cbd5e1;
+      border-radius: 16px;
+      padding: 24px;
+      color: #64748b;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .state-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 1000px) {
+      .topbar { display: grid; }
+      .layout { grid-template-columns: 1fr; }
+      .filters { grid-template-columns: 1fr 1fr; }
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 620px) {
+      .filters,
+      .kpi-grid,
+      .reaction-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <main>
+      <section class="card">
+        <h1>Loading MOEX dashboard...</h1>
+        <p class="muted">Страница загружается без React/Vite/npm. Белого экрана больше быть не должно.</p>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const API_BASE = "/api/v1";
+
+    const state = {
+      secid: "SBER",
+      tradeDate: "2026-05-22",
+      minCriticality: 0.3,
+      loading: false,
+      warning: "",
+      error: "",
+      news: [],
+      selectedNewsId: null,
+      market: [],
+      summary: null
+    };
+
+    window.onerror = function(message, source, lineno, colno, error) {
+      showFatal(error && error.stack ? error.stack : String(message));
+    };
+
+    window.onunhandledrejection = function(event) {
+      showFatal(event.reason && event.reason.stack ? event.reason.stack : String(event.reason));
+    };
+
+    function showFatal(message) {
+      document.getElementById("root").innerHTML = `
+        <main>
+          <section class="card error">
+            <h1>Frontend error</h1>
+            <p>Белого экрана больше нет. Ошибка:</p>
+            <pre style="white-space:pre-wrap;overflow:auto">${escapeHtml(message)}</pre>
+          </section>
+        </main>
+      `;
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function formatNumber(value, digits = 2) {
+      const num = Number(value);
+      if (!Number.isFinite(num)) return "—";
+      return num.toLocaleString("ru-RU", { maximumFractionDigits: digits });
+    }
+
+    function formatPercent(value) {
+      const num = Number(value);
+      if (!Number.isFinite(num)) return "—";
+      return `${Math.round(num * 100)}%`;
+    }
+
+    function toneClass(level) {
+      if (["critical", "high", "liquidity_stress"].includes(level)) return "badge bad";
+      if (["medium", "sell_pressure"].includes(level)) return "badge warn";
+      if (["low", "buy_pressure"].includes(level)) return "badge good";
+      if (level === "active_cancellations") return "badge info";
+      return "badge";
+    }
+
+    function parseBackendDate(value) {
+      if (!value) return null;
+      const normalized = String(value).includes("T") ? String(value) : String(value).replace(" ", "T");
+      const parsed = new Date(normalized);
+      return Number.isNaN(parsed.getTime()) ? null : parsed;
+    }
+
+    function minutesDiff(leftValue, rightValue) {
+      const left = parseBackendDate(leftValue);
+      const right = parseBackendDate(rightValue);
+      if (!left || !right) return null;
+      return Math.round((left.getTime() - right.getTime()) / 60000);
+    }
+
+    function buildUrl(path, params = {}) {
+      const url = new URL(`${API_BASE}${path}`, window.location.origin);
+      Object.entries(params).forEach(([key, value]) => {
+        if (value !== undefined && value !== null && value !== "") {
+          url.searchParams.set(key, String(value));
+        }
+      });
+      return url;
+    }
+
+    async function fetchJson(path, params = {}, timeoutMs = 6000) {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), timeoutMs);
+
+      try {
+        const response = await fetch(buildUrl(path, params), {
+          signal: controller.signal
+        });
+
+        const text = await response.text();
+
+        if (!response.ok) {
+          throw new Error(`${response.status} ${response.statusText}: ${text}`);
+        }
+
+        if (!text.trim()) return [];
+        return JSON.parse(text);
+      } finally {
+        clearTimeout(timeout);
+      }
+    }
+
+    async function safeFetch(path, params = {}) {
+      try {
+        const data = await fetchJson(path, params);
+        return { ok: true, data };
+      } catch (error) {
+        console.warn(path, error);
+        return {
+          ok: false,
+          error: error instanceof Error ? error.message : String(error)
+        };
+      }
+    }
+
+    function makeDemoNews(secid, tradeDate) {
+      return [
+        {
+          published_date: tradeDate,
+          published_time: "07:15:00",
+          published_at: `${tradeDate}T07:15:00`,
+          news_id: `demo-${secid}-${tradeDate}-1`,
+          secid,
+          title: `${secid}: демонстрационная новость с высокой критичностью`,
+          relevance_score: 0.92,
+          criticality_score: 0.78,
+          criticality_level: "high",
+          sentiment: "mixed",
+          event_type: "demo_event",
+          reason: "Remote news marts are inconsistent. Demo news is used while real market data is loaded."
+        },
+        {
+          published_date: tradeDate,
+          published_time: "07:35:00",
+          published_at: `${tradeDate}T07:35:00`,
+          news_id: `demo-${secid}-${tradeDate}-2`,
+          secid,
+          title: `${secid}: демонстрационная новость средней критичности`,
+          relevance_score: 0.75,
+          criticality_score: 0.52,
+          criticality_level: "medium",
+          sentiment: "neutral",
+          event_type: "demo_event",
+          reason: "Frontend remains usable while backend news views are being fixed."
+        }
+      ];
+    }
+
+    function makeDemoMarket(secid, tradeDate) {
+      const rows = [];
+
+      for (let i = 0; i < 48; i += 1) {
+        const totalMinutes = 7 * 60 + i * 5;
+        const hour = String(Math.floor(totalMinutes / 60)).padStart(2, "0");
+        const minute = String(totalMinutes % 60).padStart(2, "0");
+        const tradeTime = `${hour}:${minute}:00`;
+
+        const stress = i >= 3 && i <= 6;
+        const spread = stress ? 1.4 + i * 0.08 : 0.9 + Math.sin(i / 2) * 0.25;
+        const imbalance = stress ? 0.4 - i * 0.03 : Math.sin(i / 3) * 0.2;
+        const direction = Math.cos(i / 4) * 0.45;
+
+        rows.push({
+          trade_date: tradeDate,
+          trade_time: tradeTime,
+          event_time: `${tradeDate}T${tradeTime}`,
+          secid,
+          shortname: secid,
+          spread_bbo: Number(spread.toFixed(2)),
+          book_vol_imbalance: Number(imbalance.toFixed(2)),
+          trade_direction_imbalance: Number(direction.toFixed(2)),
+          trades: Math.round(120 + Math.abs(Math.sin(i)) * 420),
+          market_state: stress ? "liquidity_stress" : i % 5 === 0 ? "active_cancellations" : "normal"
+        });
+      }
+
+      return rows;
+    }
+
+    function computeSummary(secid, tradeDate, rows) {
+      const spreads = rows.map(row => Number(row.spread_bbo)).filter(Number.isFinite);
+      const avgSpread = spreads.length ? spreads.reduce((a, b) => a + b, 0) / spreads.length : null;
+
+      return {
+        trade_date: tradeDate,
+        secid,
+        avg_spread_bbo: avgSpread,
+        stress_intervals: rows.filter(row => row.market_state === "liquidity_stress").length,
+        total_trades: rows.reduce((sum, row) => sum + Number(row.trades || 0), 0)
+      };
+    }
+
+    function candidateLevel(score) {
+      if (!Number.isFinite(Number(score))) return "unknown";
+      if (score >= 0.9) return "high";
+      if (score >= 0.75) return "medium";
+      if (score >= 0.6) return "low";
+      return "very_low";
+    }
+
+    function mapCandidate(candidate, fallbackSecid) {
+      const score = Number(candidate.match_score ?? 0.5);
+      const secid = candidate.secid || fallbackSecid;
+
+      return {
+        published_date: candidate.published_date,
+        published_time: candidate.published_time,
+        published_at: candidate.published_at,
+        news_id: candidate.news_id || `candidate-${secid}-${candidate.published_date}-${candidate.published_time}`,
+        secid,
+        title: candidate.title || `${secid}: ticker matching candidate`,
+        relevance_score: score,
+        criticality_score: score,
+        criticality_level: candidateLevel(score),
+        sentiment: "unknown",
+        event_type: "ticker_match",
+        reason: `Ticker matching fallback: ${candidate.match_method || "unknown"} by ${candidate.matched_field || "unknown"} = ${candidate.matched_value || "unknown"}.`
+      };
+    }
+
+    async function loadNewsData(secid, tradeDate, minCriticality) {
+      const criticality = await safeFetch("/news/criticality", {
+        secid,
+        from_date: tradeDate,
+        to_date: tradeDate,
+        min_criticality: minCriticality,
+        limit: 100
+      });
+
+      if (criticality.ok && Array.isArray(criticality.data)) {
+        return {
+          data: criticality.data,
+          warning: ""
+        };
+      }
+
+      const candidates = await safeFetch("/news/company-candidates", {
+        secid,
+        from_date: tradeDate,
+        to_date: tradeDate,
+        min_score: minCriticality,
+        limit: 100
+      });
+
+      if (candidates.ok && Array.isArray(candidates.data)) {
+        return {
+          data: candidates.data.map(item => mapCandidate(item, secid)),
+          warning: "LLM criticality endpoint is unavailable. Showing ticker-matching fallback."
+        };
+      }
+
+      return {
+        data: makeDemoNews(secid, tradeDate),
+        warning: "Remote news endpoints are unavailable. Showing demo news while using market data."
+      };
+    }
+
+    function getSelectedNews() {
+      return state.news.find(item => item.news_id === state.selectedNewsId) || state.news[0] || null;
+    }
+
+    function getMarketWindow() {
+      const selected = getSelectedNews();
+      if (!selected || !selected.published_at) return [];
+
+      return state.market
+        .map(point => {
+          const relMin = minutesDiff(point.event_time, selected.published_at);
+          if (relMin === null) return null;
+          return { ...point, rel_min: relMin };
+        })
+        .filter(point => point && point.rel_min >= -30 && point.rel_min <= 60);
+    }
+
+    function average(rows, key) {
+      const values = rows.map(row => Number(row[key])).filter(Number.isFinite);
+      if (!values.length) return null;
+      return values.reduce((a, b) => a + b, 0) / values.length;
+    }
+
+    function getReactionStats(windowRows) {
+      const before = windowRows.filter(point => point.rel_min < 0);
+      const after = windowRows.filter(point => point.rel_min >= 0);
+
+      const beforeSpread = average(before, "spread_bbo");
+      const afterSpread = average(after, "spread_bbo");
+
+      const beforeImbalance = average(before, "book_vol_imbalance");
+      const afterImbalance = average(after, "book_vol_imbalance");
+
+      const beforeTrades = average(before, "trades");
+      const afterTrades = average(after, "trades");
+
+      return {
+        beforeSpread,
+        afterSpread,
+        spreadDelta: beforeSpread !== null && afterSpread !== null ? afterSpread - beforeSpread : null,
+        beforeImbalance,
+        afterImbalance,
+        imbalanceDelta: beforeImbalance !== null && afterImbalance !== null ? afterImbalance - beforeImbalance : null,
+        beforeTrades,
+        afterTrades,
+        tradesDelta: beforeTrades !== null && afterTrades !== null ? afterTrades - beforeTrades : null
+      };
+    }
+
+    async function loadData() {
+      state.loading = true;
+      state.warning = "";
+      state.error = "";
+      render();
+
+      const warnings = [];
+
+      const newsResult = await loadNewsData(state.secid, state.tradeDate, state.minCriticality);
+      state.news = newsResult.data;
+      state.selectedNewsId = state.news[0] ? state.news[0].news_id : null;
+      if (newsResult.warning) warnings.push(newsResult.warning);
+
+      const intraday = await safeFetch("/market/intraday", {
+        secid: state.secid,
+        trade_date: state.tradeDate,
+        limit: 1000
+      });
+
+      if (intraday.ok && Array.isArray(intraday.data) && intraday.data.length > 0) {
+        state.market = intraday.data;
+      } else {
+        state.market = makeDemoMarket(state.secid, state.tradeDate);
+        warnings.push("Intraday endpoint failed or returned no data. Showing demo market data.");
+      }
+
+      state.summary = computeSummary(state.secid, state.tradeDate, state.market);
+      state.warning = warnings.join(" ");
+      state.loading = false;
+      render();
+    }
+
+    function drawChart(containerId, rows, series, xKey) {
+      const container = document.getElementById(containerId);
+      if (!container) return;
+
+      if (!rows.length) {
+        container.innerHTML = `<div class="empty" style="height:100%;display:grid;place-items:center">Нет данных для графика.</div>`;
+        return;
+      }
+
+      const width = 900;
+      const height = 300;
+      const pad = 42;
+
+      const xValues = rows.map(row => Number(row[xKey])).filter(Number.isFinite);
+      const yValues = [];
+
+      rows.forEach(row => {
+        series.forEach(item => {
+          const value = Number(row[item.key]);
+          if (Number.isFinite(value)) yValues.push(value);
+        });
+      });
+
+      if (!xValues.length || !yValues.length) {
+        container.innerHTML = `<div class="empty" style="height:100%;display:grid;place-items:center">Нет числовых данных для графика.</div>`;
+        return;
+      }
+
+      let xMin = Math.min(...xValues);
+      let xMax = Math.max(...xValues);
+      let yMin = Math.min(...yValues);
+      let yMax = Math.max(...yValues);
+
+      if (xMin === xMax) { xMin -= 1; xMax += 1; }
+      if (yMin === yMax) { yMin -= 1; yMax += 1; }
+
+      const xScale = value => pad + ((value - xMin) / (xMax - xMin)) * (width - pad * 2);
+      const yScale = value => height - pad - ((value - yMin) / (yMax - yMin)) * (height - pad * 2);
+
+      const colors = ["#0f172a", "#2563eb", "#dc2626", "#059669"];
+
+      const paths = series.map((item, idx) => {
+        const points = rows
+          .map(row => {
+            const x = Number(row[xKey]);
+            const y = Number(row[item.key]);
+            if (!Number.isFinite(x) || !Number.isFinite(y)) return null;
+            return `${xScale(x).toFixed(1)},${yScale(y).toFixed(1)}`;
+          })
+          .filter(Boolean);
+
+        if (points.length < 2) return "";
+
+        return `
+          <polyline
+            points="${points.join(" ")}"
+            fill="none"
+            stroke="${colors[idx % colors.length]}"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        `;
+      }).join("");
+
+      const zeroLine = xMin <= 0 && xMax >= 0
+        ? `<line x1="${xScale(0)}" x2="${xScale(0)}" y1="${pad}" y2="${height - pad}" stroke="#64748b" stroke-dasharray="5 5" />`
+        : "";
+
+      const legend = series.map((item, idx) => `
+        <span style="display:inline-flex;align-items:center;gap:6px;margin-right:14px">
+          <span style="width:12px;height:3px;background:${colors[idx % colors.length]};display:inline-block"></span>
+          ${escapeHtml(item.label)}
+        </span>
+      `).join("");
+
+      container.innerHTML = `
+        <div style="height:100%;padding:12px">
+          <div style="height:24px;font-size:12px;color:#475569">${legend}</div>
+          <svg viewBox="0 0 ${width} ${height - 24}" preserveAspectRatio="none">
+            <line x1="${pad}" x2="${width - pad}" y1="${height - pad - 24}" y2="${height - pad - 24}" stroke="#cbd5e1" />
+            <line x1="${pad}" x2="${pad}" y1="${pad}" y2="${height - pad - 24}" stroke="#cbd5e1" />
+            ${zeroLine}
+            ${paths}
+          </svg>
+        </div>
+      `;
+    }
+
+    function render() {
+      const selected = getSelectedNews();
+      const windowRows = getMarketWindow();
+      const stats = getReactionStats(windowRows);
+      const states = [...new Set(state.market.map(item => item.market_state).filter(Boolean))];
+
+      const newsHtml = state.news.length
+        ? state.news.map(item => `
+          <button class="news-card ${item.news_id === (selected && selected.news_id) ? "active" : ""}" data-news-id="${escapeHtml(item.news_id)}">
+            <div class="badges">
+              <span class="${toneClass(item.criticality_level)}">${escapeHtml(item.criticality_level || "unknown")}</span>
+              <span class="badge">crit ${formatPercent(item.criticality_score)}</span>
+              <span class="badge">rel ${formatPercent(item.relevance_score)}</span>
+            </div>
+            <strong>${escapeHtml(item.title || "No title")}</strong>
+            <small>${escapeHtml(item.published_date)} ${escapeHtml(item.published_time || "time n/a")} · ${escapeHtml(item.event_type || "event n/a")} · ${escapeHtml(item.sentiment || "sentiment n/a")}</small>
+            <p>${escapeHtml(item.reason || "")}</p>
+          </button>
+        `).join("")
+        : `<div class="empty">Нет новостей под текущий фильтр.</div>`;
+
+      document.getElementById("root").innerHTML = `
+        <header class="topbar">
+          <div class="brand">
+            <div class="brand-icon">▥</div>
+            <div>
+              <h1>MOEX News Impact Dashboard</h1>
+              <p class="muted">Новости → LLM-критичность → реакция микроструктуры рынка</p>
+            </div>
+          </div>
+
+          <div class="filters">
+            <label>
+              <span>Ticker</span>
+              <input id="secid-input" value="${escapeHtml(state.secid)}" />
+            </label>
+
+            <label>
+              <span>Date</span>
+              <input id="date-input" type="date" value="${escapeHtml(state.tradeDate)}" />
+            </label>
+
+            <label>
+              <span>Min criticality</span>
+              <input id="criticality-input" type="number" min="0" max="1" step="0.05" value="${escapeHtml(state.minCriticality)}" />
+            </label>
+
+            <button id="load-button">${state.loading ? "Loading..." : "Load"}</button>
+
+            <a class="button secondary" href="/api/v1/exports/news-criticality.csv?secid=${encodeURIComponent(state.secid)}&from_date=${state.tradeDate}&to_date=${state.tradeDate}&min_criticality=${state.minCriticality}">
+              CSV
+            </a>
+          </div>
+        </header>
+
+        <main>
+          ${state.loading ? `<section class="card banner warning">⏳ Loading data from backend...</section>` : ""}
+          ${state.warning ? `<section class="card banner warning">⚠️ ${escapeHtml(state.warning)}</section>` : ""}
+          ${state.error ? `<section class="card banner error">⚠️ ${escapeHtml(state.error)}</section>` : ""}
+
+          <section class="kpi-grid">
+            <div class="card kpi">
+              <span>News displayed</span>
+              <strong>${state.news.length}</strong>
+            </div>
+
+            <div class="card kpi">
+              <span>Market intervals</span>
+              <strong>${state.market.length}</strong>
+            </div>
+
+            <div class="card kpi">
+              <span>Stress intervals</span>
+              <strong>${formatNumber(state.summary && state.summary.stress_intervals, 0)}</strong>
+            </div>
+
+            <div class="card kpi">
+              <span>Avg spread BBO</span>
+              <strong>${formatNumber(state.summary && state.summary.avg_spread_bbo)}</strong>
+            </div>
+          </section>
+
+          <section class="layout">
+            <aside class="card news-list">
+              <div class="section-title-row">
+                <h2>Critical news</h2>
+                <span class="badge info">${escapeHtml(state.secid)}</span>
+              </div>
+              ${newsHtml}
+            </aside>
+
+            <section class="content">
+              <div class="card">
+                <div class="section-title-row">
+                  <div>
+                    <h2>Event window: -30 / +60 minutes</h2>
+                    <p class="muted">${escapeHtml(selected ? selected.title : "Select a news item")}</p>
+                  </div>
+                  ${selected ? `<span class="${toneClass(selected.criticality_level)}">${escapeHtml(selected.criticality_level || "unknown")}</span>` : ""}
+                </div>
+
+                <div class="reaction-grid">
+                  <div>
+                    <span>Spread delta</span>
+                    <strong>${formatNumber(stats.spreadDelta)}</strong>
+                    <small>${formatNumber(stats.beforeSpread)} → ${formatNumber(stats.afterSpread)}</small>
+                  </div>
+
+                  <div>
+                    <span>Book imbalance delta</span>
+                    <strong>${formatNumber(stats.imbalanceDelta)}</strong>
+                    <small>${formatNumber(stats.beforeImbalance)} → ${formatNumber(stats.afterImbalance)}</small>
+                  </div>
+
+                  <div>
+                    <span>Trades delta</span>
+                    <strong>${formatNumber(stats.tradesDelta, 0)}</strong>
+                    <small>${formatNumber(stats.beforeTrades, 0)} → ${formatNumber(stats.afterTrades, 0)}</small>
+                  </div>
+                </div>
+
+                <div id="event-chart" class="chart"></div>
+              </div>
+
+              <div class="card">
+                <div class="section-title-row">
+                  <h2>Intraday market states</h2>
+                  <span class="badge">${state.market.length} intervals</span>
+                </div>
+
+                <div id="intraday-chart" class="chart small"></div>
+
+                <div class="state-row">
+                  ${states.map(item => `<span class="${toneClass(item)}">${escapeHtml(item)}</span>`).join("")}
+                </div>
+              </div>
+            </section>
+          </section>
+        </main>
+      `;
+
+      document.getElementById("load-button").onclick = () => {
+        state.secid = document.getElementById("secid-input").value.toUpperCase();
+        state.tradeDate = document.getElementById("date-input").value;
+        state.minCriticality = Number(document.getElementById("criticality-input").value);
+        loadData();
+      };
+
+      document.querySelectorAll("[data-news-id]").forEach(button => {
+        button.onclick = () => {
+          state.selectedNewsId = button.getAttribute("data-news-id");
+          render();
+        };
+      });
+
+      drawChart("event-chart", windowRows, [
+        { key: "spread_bbo", label: "Spread BBO" },
+        { key: "book_vol_imbalance", label: "Book imbalance" },
+        { key: "trade_direction_imbalance", label: "Trade direction" }
+      ], "rel_min");
+
+      const intradayRows = state.market.map((row, idx) => ({ ...row, idx }));
+      drawChart("intraday-chart", intradayRows, [
+        { key: "spread_bbo", label: "Spread BBO" },
+        { key: "book_vol_imbalance", label: "Book imbalance" }
+      ], "idx");
+    }
+
+    render();
+    loadData();
+  </script>
+</body>
+</html>
