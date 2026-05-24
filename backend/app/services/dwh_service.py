@@ -371,7 +371,33 @@ def list_news_criticality(
     where_sql = "WHERE " + " AND ".join(where) if where else ""
     return _query(
         f"""
-        SELECT *
+        SELECT
+            published_date,
+            published_time,
+            published_at,
+            time_precision,
+            news_id,
+            secid,
+            boardid,
+            shortname,
+            secname,
+            title,
+            tags,
+            match_score,
+            match_method,
+            matched_field,
+            matched_value,
+            relevance_score,
+            criticality_score,
+            criticality_level,
+            sentiment,
+            event_type,
+            impact_horizon,
+            confidence,
+            reason,
+            model_name,
+            prompt_version,
+            assessed_at
         FROM mart.v_news_criticality
         {where_sql}
         ORDER BY published_date DESC, criticality_score DESC, secid
