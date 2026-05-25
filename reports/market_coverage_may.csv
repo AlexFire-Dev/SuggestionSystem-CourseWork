@@ -1,0 +1,2251 @@
+secid,trade_date,endpoint,ok,rows,error
+SBER,2026-05-01,/market/intraday,True,0,
+SBER,2026-05-01,/market/fact-5m,True,0,
+SBER,2026-05-01,/market/daily-summary,True,0,
+SBER,2026-05-02,/market/intraday,True,0,
+SBER,2026-05-02,/market/fact-5m,True,0,
+SBER,2026-05-02,/market/daily-summary,True,0,
+SBER,2026-05-03,/market/intraday,True,0,
+SBER,2026-05-03,/market/fact-5m,True,0,
+SBER,2026-05-03,/market/daily-summary,True,0,
+SBER,2026-05-04,/market/intraday,True,0,
+SBER,2026-05-04,/market/fact-5m,True,0,
+SBER,2026-05-04,/market/daily-summary,True,0,
+SBER,2026-05-05,/market/intraday,True,0,
+SBER,2026-05-05,/market/fact-5m,True,0,
+SBER,2026-05-05,/market/daily-summary,True,0,
+SBER,2026-05-06,/market/intraday,True,0,
+SBER,2026-05-06,/market/fact-5m,True,0,
+SBER,2026-05-06,/market/daily-summary,True,0,
+SBER,2026-05-07,/market/intraday,True,0,
+SBER,2026-05-07,/market/fact-5m,True,0,
+SBER,2026-05-07,/market/daily-summary,True,0,
+SBER,2026-05-08,/market/intraday,True,0,
+SBER,2026-05-08,/market/fact-5m,True,0,
+SBER,2026-05-08,/market/daily-summary,True,0,
+SBER,2026-05-09,/market/intraday,True,0,
+SBER,2026-05-09,/market/fact-5m,True,0,
+SBER,2026-05-09,/market/daily-summary,True,0,
+SBER,2026-05-10,/market/intraday,True,0,
+SBER,2026-05-10,/market/fact-5m,True,0,
+SBER,2026-05-10,/market/daily-summary,True,0,
+SBER,2026-05-11,/market/intraday,True,0,
+SBER,2026-05-11,/market/fact-5m,True,0,
+SBER,2026-05-11,/market/daily-summary,True,0,
+SBER,2026-05-12,/market/intraday,True,0,
+SBER,2026-05-12,/market/fact-5m,True,0,
+SBER,2026-05-12,/market/daily-summary,True,0,
+SBER,2026-05-13,/market/intraday,True,0,
+SBER,2026-05-13,/market/fact-5m,True,0,
+SBER,2026-05-13,/market/daily-summary,True,0,
+SBER,2026-05-14,/market/intraday,True,0,
+SBER,2026-05-14,/market/fact-5m,True,0,
+SBER,2026-05-14,/market/daily-summary,True,0,
+SBER,2026-05-15,/market/intraday,True,0,
+SBER,2026-05-15,/market/fact-5m,True,0,
+SBER,2026-05-15,/market/daily-summary,True,0,
+SBER,2026-05-16,/market/intraday,True,0,
+SBER,2026-05-16,/market/fact-5m,True,0,
+SBER,2026-05-16,/market/daily-summary,True,0,
+SBER,2026-05-17,/market/intraday,True,0,
+SBER,2026-05-17,/market/fact-5m,True,0,
+SBER,2026-05-17,/market/daily-summary,True,0,
+SBER,2026-05-18,/market/intraday,True,0,
+SBER,2026-05-18,/market/fact-5m,True,0,
+SBER,2026-05-18,/market/daily-summary,True,0,
+SBER,2026-05-19,/market/intraday,True,0,
+SBER,2026-05-19,/market/fact-5m,True,0,
+SBER,2026-05-19,/market/daily-summary,True,0,
+SBER,2026-05-20,/market/intraday,True,0,
+SBER,2026-05-20,/market/fact-5m,True,0,
+SBER,2026-05-20,/market/daily-summary,True,0,
+SBER,2026-05-21,/market/intraday,True,0,
+SBER,2026-05-21,/market/fact-5m,True,0,
+SBER,2026-05-21,/market/daily-summary,True,0,
+SBER,2026-05-22,/market/intraday,True,0,
+SBER,2026-05-22,/market/fact-5m,True,0,
+SBER,2026-05-22,/market/daily-summary,True,0,
+SBER,2026-05-23,/market/intraday,True,0,
+SBER,2026-05-23,/market/fact-5m,True,0,
+SBER,2026-05-23,/market/daily-summary,True,0,
+SBER,2026-05-24,/market/intraday,True,5000,
+SBER,2026-05-24,/market/fact-5m,True,5000,
+SBER,2026-05-24,/market/daily-summary,True,1,
+SBER,2026-05-25,/market/intraday,True,0,
+SBER,2026-05-25,/market/fact-5m,True,0,
+SBER,2026-05-25,/market/daily-summary,True,0,
+GAZP,2026-05-01,/market/intraday,True,0,
+GAZP,2026-05-01,/market/fact-5m,True,0,
+GAZP,2026-05-01,/market/daily-summary,True,0,
+GAZP,2026-05-02,/market/intraday,True,0,
+GAZP,2026-05-02,/market/fact-5m,True,0,
+GAZP,2026-05-02,/market/daily-summary,True,0,
+GAZP,2026-05-03,/market/intraday,True,0,
+GAZP,2026-05-03,/market/fact-5m,True,0,
+GAZP,2026-05-03,/market/daily-summary,True,0,
+GAZP,2026-05-04,/market/intraday,True,0,
+GAZP,2026-05-04,/market/fact-5m,True,0,
+GAZP,2026-05-04,/market/daily-summary,True,0,
+GAZP,2026-05-05,/market/intraday,True,0,
+GAZP,2026-05-05,/market/fact-5m,True,0,
+GAZP,2026-05-05,/market/daily-summary,True,0,
+GAZP,2026-05-06,/market/intraday,True,0,
+GAZP,2026-05-06,/market/fact-5m,True,0,
+GAZP,2026-05-06,/market/daily-summary,True,0,
+GAZP,2026-05-07,/market/intraday,True,0,
+GAZP,2026-05-07,/market/fact-5m,True,0,
+GAZP,2026-05-07,/market/daily-summary,True,0,
+GAZP,2026-05-08,/market/intraday,True,0,
+GAZP,2026-05-08,/market/fact-5m,True,0,
+GAZP,2026-05-08,/market/daily-summary,True,0,
+GAZP,2026-05-09,/market/intraday,True,0,
+GAZP,2026-05-09,/market/fact-5m,True,0,
+GAZP,2026-05-09,/market/daily-summary,True,0,
+GAZP,2026-05-10,/market/intraday,True,0,
+GAZP,2026-05-10,/market/fact-5m,True,0,
+GAZP,2026-05-10,/market/daily-summary,True,0,
+GAZP,2026-05-11,/market/intraday,True,0,
+GAZP,2026-05-11,/market/fact-5m,True,0,
+GAZP,2026-05-11,/market/daily-summary,True,0,
+GAZP,2026-05-12,/market/intraday,True,0,
+GAZP,2026-05-12,/market/fact-5m,True,0,
+GAZP,2026-05-12,/market/daily-summary,True,0,
+GAZP,2026-05-13,/market/intraday,True,0,
+GAZP,2026-05-13,/market/fact-5m,True,0,
+GAZP,2026-05-13,/market/daily-summary,True,0,
+GAZP,2026-05-14,/market/intraday,True,0,
+GAZP,2026-05-14,/market/fact-5m,True,0,
+GAZP,2026-05-14,/market/daily-summary,True,0,
+GAZP,2026-05-15,/market/intraday,True,0,
+GAZP,2026-05-15,/market/fact-5m,True,0,
+GAZP,2026-05-15,/market/daily-summary,True,0,
+GAZP,2026-05-16,/market/intraday,True,0,
+GAZP,2026-05-16,/market/fact-5m,True,0,
+GAZP,2026-05-16,/market/daily-summary,True,0,
+GAZP,2026-05-17,/market/intraday,True,0,
+GAZP,2026-05-17,/market/fact-5m,True,0,
+GAZP,2026-05-17,/market/daily-summary,True,0,
+GAZP,2026-05-18,/market/intraday,True,0,
+GAZP,2026-05-18,/market/fact-5m,True,0,
+GAZP,2026-05-18,/market/daily-summary,True,0,
+GAZP,2026-05-19,/market/intraday,True,0,
+GAZP,2026-05-19,/market/fact-5m,True,0,
+GAZP,2026-05-19,/market/daily-summary,True,0,
+GAZP,2026-05-20,/market/intraday,True,0,
+GAZP,2026-05-20,/market/fact-5m,True,0,
+GAZP,2026-05-20,/market/daily-summary,True,0,
+GAZP,2026-05-21,/market/intraday,True,0,
+GAZP,2026-05-21,/market/fact-5m,True,0,
+GAZP,2026-05-21,/market/daily-summary,True,0,
+GAZP,2026-05-22,/market/intraday,True,0,
+GAZP,2026-05-22,/market/fact-5m,True,0,
+GAZP,2026-05-22,/market/daily-summary,True,0,
+GAZP,2026-05-23,/market/intraday,True,0,
+GAZP,2026-05-23,/market/fact-5m,True,0,
+GAZP,2026-05-23,/market/daily-summary,True,0,
+GAZP,2026-05-24,/market/intraday,True,5000,
+GAZP,2026-05-24,/market/fact-5m,True,5000,
+GAZP,2026-05-24,/market/daily-summary,True,1,
+GAZP,2026-05-25,/market/intraday,True,0,
+GAZP,2026-05-25,/market/fact-5m,True,0,
+GAZP,2026-05-25,/market/daily-summary,True,0,
+LKOH,2026-05-01,/market/intraday,True,0,
+LKOH,2026-05-01,/market/fact-5m,True,0,
+LKOH,2026-05-01,/market/daily-summary,True,0,
+LKOH,2026-05-02,/market/intraday,True,0,
+LKOH,2026-05-02,/market/fact-5m,True,0,
+LKOH,2026-05-02,/market/daily-summary,True,0,
+LKOH,2026-05-03,/market/intraday,True,0,
+LKOH,2026-05-03,/market/fact-5m,True,0,
+LKOH,2026-05-03,/market/daily-summary,True,0,
+LKOH,2026-05-04,/market/intraday,True,0,
+LKOH,2026-05-04,/market/fact-5m,True,0,
+LKOH,2026-05-04,/market/daily-summary,True,0,
+LKOH,2026-05-05,/market/intraday,True,0,
+LKOH,2026-05-05,/market/fact-5m,True,0,
+LKOH,2026-05-05,/market/daily-summary,True,0,
+LKOH,2026-05-06,/market/intraday,True,0,
+LKOH,2026-05-06,/market/fact-5m,True,0,
+LKOH,2026-05-06,/market/daily-summary,True,0,
+LKOH,2026-05-07,/market/intraday,True,0,
+LKOH,2026-05-07,/market/fact-5m,True,0,
+LKOH,2026-05-07,/market/daily-summary,True,0,
+LKOH,2026-05-08,/market/intraday,True,0,
+LKOH,2026-05-08,/market/fact-5m,True,0,
+LKOH,2026-05-08,/market/daily-summary,True,0,
+LKOH,2026-05-09,/market/intraday,True,0,
+LKOH,2026-05-09,/market/fact-5m,True,0,
+LKOH,2026-05-09,/market/daily-summary,True,0,
+LKOH,2026-05-10,/market/intraday,True,0,
+LKOH,2026-05-10,/market/fact-5m,True,0,
+LKOH,2026-05-10,/market/daily-summary,True,0,
+LKOH,2026-05-11,/market/intraday,True,0,
+LKOH,2026-05-11,/market/fact-5m,True,0,
+LKOH,2026-05-11,/market/daily-summary,True,0,
+LKOH,2026-05-12,/market/intraday,True,0,
+LKOH,2026-05-12,/market/fact-5m,True,0,
+LKOH,2026-05-12,/market/daily-summary,True,0,
+LKOH,2026-05-13,/market/intraday,True,0,
+LKOH,2026-05-13,/market/fact-5m,True,0,
+LKOH,2026-05-13,/market/daily-summary,True,0,
+LKOH,2026-05-14,/market/intraday,True,0,
+LKOH,2026-05-14,/market/fact-5m,True,0,
+LKOH,2026-05-14,/market/daily-summary,True,0,
+LKOH,2026-05-15,/market/intraday,True,0,
+LKOH,2026-05-15,/market/fact-5m,True,0,
+LKOH,2026-05-15,/market/daily-summary,True,0,
+LKOH,2026-05-16,/market/intraday,True,0,
+LKOH,2026-05-16,/market/fact-5m,True,0,
+LKOH,2026-05-16,/market/daily-summary,True,0,
+LKOH,2026-05-17,/market/intraday,True,0,
+LKOH,2026-05-17,/market/fact-5m,True,0,
+LKOH,2026-05-17,/market/daily-summary,True,0,
+LKOH,2026-05-18,/market/intraday,True,0,
+LKOH,2026-05-18,/market/fact-5m,True,0,
+LKOH,2026-05-18,/market/daily-summary,True,0,
+LKOH,2026-05-19,/market/intraday,True,0,
+LKOH,2026-05-19,/market/fact-5m,True,0,
+LKOH,2026-05-19,/market/daily-summary,True,0,
+LKOH,2026-05-20,/market/intraday,True,0,
+LKOH,2026-05-20,/market/fact-5m,True,0,
+LKOH,2026-05-20,/market/daily-summary,True,0,
+LKOH,2026-05-21,/market/intraday,True,0,
+LKOH,2026-05-21,/market/fact-5m,True,0,
+LKOH,2026-05-21,/market/daily-summary,True,0,
+LKOH,2026-05-22,/market/intraday,True,0,
+LKOH,2026-05-22,/market/fact-5m,True,0,
+LKOH,2026-05-22,/market/daily-summary,True,0,
+LKOH,2026-05-23,/market/intraday,True,0,
+LKOH,2026-05-23,/market/fact-5m,True,0,
+LKOH,2026-05-23,/market/daily-summary,True,0,
+LKOH,2026-05-24,/market/intraday,True,5000,
+LKOH,2026-05-24,/market/fact-5m,True,5000,
+LKOH,2026-05-24,/market/daily-summary,True,1,
+LKOH,2026-05-25,/market/intraday,True,0,
+LKOH,2026-05-25,/market/fact-5m,True,0,
+LKOH,2026-05-25,/market/daily-summary,True,0,
+GMKN,2026-05-01,/market/intraday,True,0,
+GMKN,2026-05-01,/market/fact-5m,True,0,
+GMKN,2026-05-01,/market/daily-summary,True,0,
+GMKN,2026-05-02,/market/intraday,True,0,
+GMKN,2026-05-02,/market/fact-5m,True,0,
+GMKN,2026-05-02,/market/daily-summary,True,0,
+GMKN,2026-05-03,/market/intraday,True,0,
+GMKN,2026-05-03,/market/fact-5m,True,0,
+GMKN,2026-05-03,/market/daily-summary,True,0,
+GMKN,2026-05-04,/market/intraday,True,0,
+GMKN,2026-05-04,/market/fact-5m,True,0,
+GMKN,2026-05-04,/market/daily-summary,True,0,
+GMKN,2026-05-05,/market/intraday,True,0,
+GMKN,2026-05-05,/market/fact-5m,True,0,
+GMKN,2026-05-05,/market/daily-summary,True,0,
+GMKN,2026-05-06,/market/intraday,True,0,
+GMKN,2026-05-06,/market/fact-5m,True,0,
+GMKN,2026-05-06,/market/daily-summary,True,0,
+GMKN,2026-05-07,/market/intraday,True,0,
+GMKN,2026-05-07,/market/fact-5m,True,0,
+GMKN,2026-05-07,/market/daily-summary,True,0,
+GMKN,2026-05-08,/market/intraday,True,0,
+GMKN,2026-05-08,/market/fact-5m,True,0,
+GMKN,2026-05-08,/market/daily-summary,True,0,
+GMKN,2026-05-09,/market/intraday,True,0,
+GMKN,2026-05-09,/market/fact-5m,True,0,
+GMKN,2026-05-09,/market/daily-summary,True,0,
+GMKN,2026-05-10,/market/intraday,True,0,
+GMKN,2026-05-10,/market/fact-5m,True,0,
+GMKN,2026-05-10,/market/daily-summary,True,0,
+GMKN,2026-05-11,/market/intraday,True,0,
+GMKN,2026-05-11,/market/fact-5m,True,0,
+GMKN,2026-05-11,/market/daily-summary,True,0,
+GMKN,2026-05-12,/market/intraday,True,0,
+GMKN,2026-05-12,/market/fact-5m,True,0,
+GMKN,2026-05-12,/market/daily-summary,True,0,
+GMKN,2026-05-13,/market/intraday,True,0,
+GMKN,2026-05-13,/market/fact-5m,True,0,
+GMKN,2026-05-13,/market/daily-summary,True,0,
+GMKN,2026-05-14,/market/intraday,True,0,
+GMKN,2026-05-14,/market/fact-5m,True,0,
+GMKN,2026-05-14,/market/daily-summary,True,0,
+GMKN,2026-05-15,/market/intraday,True,0,
+GMKN,2026-05-15,/market/fact-5m,True,0,
+GMKN,2026-05-15,/market/daily-summary,True,0,
+GMKN,2026-05-16,/market/intraday,True,0,
+GMKN,2026-05-16,/market/fact-5m,True,0,
+GMKN,2026-05-16,/market/daily-summary,True,0,
+GMKN,2026-05-17,/market/intraday,True,0,
+GMKN,2026-05-17,/market/fact-5m,True,0,
+GMKN,2026-05-17,/market/daily-summary,True,0,
+GMKN,2026-05-18,/market/intraday,True,0,
+GMKN,2026-05-18,/market/fact-5m,True,0,
+GMKN,2026-05-18,/market/daily-summary,False,0,HTTP Error 504: Gateway Time-out
+GMKN,2026-05-19,/market/intraday,True,0,
+GMKN,2026-05-19,/market/fact-5m,True,0,
+GMKN,2026-05-19,/market/daily-summary,True,0,
+GMKN,2026-05-20,/market/intraday,True,0,
+GMKN,2026-05-20,/market/fact-5m,True,0,
+GMKN,2026-05-20,/market/daily-summary,True,0,
+GMKN,2026-05-21,/market/intraday,True,0,
+GMKN,2026-05-21,/market/fact-5m,True,0,
+GMKN,2026-05-21,/market/daily-summary,True,0,
+GMKN,2026-05-22,/market/intraday,True,0,
+GMKN,2026-05-22,/market/fact-5m,True,0,
+GMKN,2026-05-22,/market/daily-summary,True,0,
+GMKN,2026-05-23,/market/intraday,True,0,
+GMKN,2026-05-23,/market/fact-5m,True,0,
+GMKN,2026-05-23,/market/daily-summary,True,0,
+GMKN,2026-05-24,/market/intraday,True,307,
+GMKN,2026-05-24,/market/fact-5m,True,307,
+GMKN,2026-05-24,/market/daily-summary,True,1,
+GMKN,2026-05-25,/market/intraday,True,0,
+GMKN,2026-05-25,/market/fact-5m,True,0,
+GMKN,2026-05-25,/market/daily-summary,True,0,
+NVTK,2026-05-01,/market/intraday,True,0,
+NVTK,2026-05-01,/market/fact-5m,True,0,
+NVTK,2026-05-01,/market/daily-summary,True,0,
+NVTK,2026-05-02,/market/intraday,True,0,
+NVTK,2026-05-02,/market/fact-5m,True,0,
+NVTK,2026-05-02,/market/daily-summary,True,0,
+NVTK,2026-05-03,/market/intraday,True,0,
+NVTK,2026-05-03,/market/fact-5m,True,0,
+NVTK,2026-05-03,/market/daily-summary,True,0,
+NVTK,2026-05-04,/market/intraday,True,0,
+NVTK,2026-05-04,/market/fact-5m,True,0,
+NVTK,2026-05-04,/market/daily-summary,True,0,
+NVTK,2026-05-05,/market/intraday,True,0,
+NVTK,2026-05-05,/market/fact-5m,True,0,
+NVTK,2026-05-05,/market/daily-summary,True,0,
+NVTK,2026-05-06,/market/intraday,True,0,
+NVTK,2026-05-06,/market/fact-5m,True,0,
+NVTK,2026-05-06,/market/daily-summary,True,0,
+NVTK,2026-05-07,/market/intraday,True,0,
+NVTK,2026-05-07,/market/fact-5m,True,0,
+NVTK,2026-05-07,/market/daily-summary,True,0,
+NVTK,2026-05-08,/market/intraday,True,0,
+NVTK,2026-05-08,/market/fact-5m,True,0,
+NVTK,2026-05-08,/market/daily-summary,True,0,
+NVTK,2026-05-09,/market/intraday,True,0,
+NVTK,2026-05-09,/market/fact-5m,True,0,
+NVTK,2026-05-09,/market/daily-summary,True,0,
+NVTK,2026-05-10,/market/intraday,True,0,
+NVTK,2026-05-10,/market/fact-5m,True,0,
+NVTK,2026-05-10,/market/daily-summary,True,0,
+NVTK,2026-05-11,/market/intraday,True,0,
+NVTK,2026-05-11,/market/fact-5m,True,0,
+NVTK,2026-05-11,/market/daily-summary,True,0,
+NVTK,2026-05-12,/market/intraday,True,0,
+NVTK,2026-05-12,/market/fact-5m,True,0,
+NVTK,2026-05-12,/market/daily-summary,True,0,
+NVTK,2026-05-13,/market/intraday,True,0,
+NVTK,2026-05-13,/market/fact-5m,True,0,
+NVTK,2026-05-13,/market/daily-summary,True,0,
+NVTK,2026-05-14,/market/intraday,True,0,
+NVTK,2026-05-14,/market/fact-5m,True,0,
+NVTK,2026-05-14,/market/daily-summary,True,0,
+NVTK,2026-05-15,/market/intraday,True,0,
+NVTK,2026-05-15,/market/fact-5m,True,0,
+NVTK,2026-05-15,/market/daily-summary,True,0,
+NVTK,2026-05-16,/market/intraday,True,0,
+NVTK,2026-05-16,/market/fact-5m,True,0,
+NVTK,2026-05-16,/market/daily-summary,True,0,
+NVTK,2026-05-17,/market/intraday,True,0,
+NVTK,2026-05-17,/market/fact-5m,True,0,
+NVTK,2026-05-17,/market/daily-summary,True,0,
+NVTK,2026-05-18,/market/intraday,True,0,
+NVTK,2026-05-18,/market/fact-5m,True,0,
+NVTK,2026-05-18,/market/daily-summary,True,0,
+NVTK,2026-05-19,/market/intraday,True,0,
+NVTK,2026-05-19,/market/fact-5m,True,0,
+NVTK,2026-05-19,/market/daily-summary,True,0,
+NVTK,2026-05-20,/market/intraday,True,0,
+NVTK,2026-05-20,/market/fact-5m,True,0,
+NVTK,2026-05-20,/market/daily-summary,True,0,
+NVTK,2026-05-21,/market/intraday,True,0,
+NVTK,2026-05-21,/market/fact-5m,True,0,
+NVTK,2026-05-21,/market/daily-summary,True,0,
+NVTK,2026-05-22,/market/intraday,True,0,
+NVTK,2026-05-22,/market/fact-5m,True,0,
+NVTK,2026-05-22,/market/daily-summary,True,0,
+NVTK,2026-05-23,/market/intraday,True,0,
+NVTK,2026-05-23,/market/fact-5m,True,0,
+NVTK,2026-05-23,/market/daily-summary,True,0,
+NVTK,2026-05-24,/market/intraday,True,5000,
+NVTK,2026-05-24,/market/fact-5m,True,5000,
+NVTK,2026-05-24,/market/daily-summary,True,1,
+NVTK,2026-05-25,/market/intraday,True,0,
+NVTK,2026-05-25,/market/fact-5m,True,0,
+NVTK,2026-05-25,/market/daily-summary,True,0,
+ROSN,2026-05-01,/market/intraday,True,0,
+ROSN,2026-05-01,/market/fact-5m,True,0,
+ROSN,2026-05-01,/market/daily-summary,True,0,
+ROSN,2026-05-02,/market/intraday,True,0,
+ROSN,2026-05-02,/market/fact-5m,True,0,
+ROSN,2026-05-02,/market/daily-summary,True,0,
+ROSN,2026-05-03,/market/intraday,True,0,
+ROSN,2026-05-03,/market/fact-5m,True,0,
+ROSN,2026-05-03,/market/daily-summary,True,0,
+ROSN,2026-05-04,/market/intraday,True,0,
+ROSN,2026-05-04,/market/fact-5m,True,0,
+ROSN,2026-05-04,/market/daily-summary,True,0,
+ROSN,2026-05-05,/market/intraday,True,0,
+ROSN,2026-05-05,/market/fact-5m,True,0,
+ROSN,2026-05-05,/market/daily-summary,True,0,
+ROSN,2026-05-06,/market/intraday,True,0,
+ROSN,2026-05-06,/market/fact-5m,True,0,
+ROSN,2026-05-06,/market/daily-summary,True,0,
+ROSN,2026-05-07,/market/intraday,True,0,
+ROSN,2026-05-07,/market/fact-5m,True,0,
+ROSN,2026-05-07,/market/daily-summary,True,0,
+ROSN,2026-05-08,/market/intraday,True,0,
+ROSN,2026-05-08,/market/fact-5m,True,0,
+ROSN,2026-05-08,/market/daily-summary,True,0,
+ROSN,2026-05-09,/market/intraday,True,0,
+ROSN,2026-05-09,/market/fact-5m,True,0,
+ROSN,2026-05-09,/market/daily-summary,True,0,
+ROSN,2026-05-10,/market/intraday,True,0,
+ROSN,2026-05-10,/market/fact-5m,True,0,
+ROSN,2026-05-10,/market/daily-summary,True,0,
+ROSN,2026-05-11,/market/intraday,True,0,
+ROSN,2026-05-11,/market/fact-5m,True,0,
+ROSN,2026-05-11,/market/daily-summary,True,0,
+ROSN,2026-05-12,/market/intraday,True,0,
+ROSN,2026-05-12,/market/fact-5m,True,0,
+ROSN,2026-05-12,/market/daily-summary,True,0,
+ROSN,2026-05-13,/market/intraday,True,0,
+ROSN,2026-05-13,/market/fact-5m,True,0,
+ROSN,2026-05-13,/market/daily-summary,True,0,
+ROSN,2026-05-14,/market/intraday,True,0,
+ROSN,2026-05-14,/market/fact-5m,True,0,
+ROSN,2026-05-14,/market/daily-summary,True,0,
+ROSN,2026-05-15,/market/intraday,True,0,
+ROSN,2026-05-15,/market/fact-5m,True,0,
+ROSN,2026-05-15,/market/daily-summary,True,0,
+ROSN,2026-05-16,/market/intraday,True,0,
+ROSN,2026-05-16,/market/fact-5m,True,0,
+ROSN,2026-05-16,/market/daily-summary,True,0,
+ROSN,2026-05-17,/market/intraday,True,0,
+ROSN,2026-05-17,/market/fact-5m,True,0,
+ROSN,2026-05-17,/market/daily-summary,True,0,
+ROSN,2026-05-18,/market/intraday,True,0,
+ROSN,2026-05-18,/market/fact-5m,True,0,
+ROSN,2026-05-18,/market/daily-summary,True,0,
+ROSN,2026-05-19,/market/intraday,True,0,
+ROSN,2026-05-19,/market/fact-5m,True,0,
+ROSN,2026-05-19,/market/daily-summary,True,0,
+ROSN,2026-05-20,/market/intraday,True,0,
+ROSN,2026-05-20,/market/fact-5m,True,0,
+ROSN,2026-05-20,/market/daily-summary,True,0,
+ROSN,2026-05-21,/market/intraday,True,0,
+ROSN,2026-05-21,/market/fact-5m,True,0,
+ROSN,2026-05-21,/market/daily-summary,True,0,
+ROSN,2026-05-22,/market/intraday,True,0,
+ROSN,2026-05-22,/market/fact-5m,True,0,
+ROSN,2026-05-22,/market/daily-summary,True,0,
+ROSN,2026-05-23,/market/intraday,True,0,
+ROSN,2026-05-23,/market/fact-5m,True,0,
+ROSN,2026-05-23,/market/daily-summary,True,0,
+ROSN,2026-05-24,/market/intraday,True,0,
+ROSN,2026-05-24,/market/fact-5m,True,0,
+ROSN,2026-05-24,/market/daily-summary,True,0,
+ROSN,2026-05-25,/market/intraday,True,0,
+ROSN,2026-05-25,/market/fact-5m,True,0,
+ROSN,2026-05-25,/market/daily-summary,True,0,
+TATN,2026-05-01,/market/intraday,True,0,
+TATN,2026-05-01,/market/fact-5m,True,0,
+TATN,2026-05-01,/market/daily-summary,True,0,
+TATN,2026-05-02,/market/intraday,True,0,
+TATN,2026-05-02,/market/fact-5m,True,0,
+TATN,2026-05-02,/market/daily-summary,True,0,
+TATN,2026-05-03,/market/intraday,True,0,
+TATN,2026-05-03,/market/fact-5m,True,0,
+TATN,2026-05-03,/market/daily-summary,True,0,
+TATN,2026-05-04,/market/intraday,True,0,
+TATN,2026-05-04,/market/fact-5m,True,0,
+TATN,2026-05-04,/market/daily-summary,True,0,
+TATN,2026-05-05,/market/intraday,True,0,
+TATN,2026-05-05,/market/fact-5m,True,0,
+TATN,2026-05-05,/market/daily-summary,True,0,
+TATN,2026-05-06,/market/intraday,True,0,
+TATN,2026-05-06,/market/fact-5m,True,0,
+TATN,2026-05-06,/market/daily-summary,True,0,
+TATN,2026-05-07,/market/intraday,True,0,
+TATN,2026-05-07,/market/fact-5m,True,0,
+TATN,2026-05-07,/market/daily-summary,True,0,
+TATN,2026-05-08,/market/intraday,True,0,
+TATN,2026-05-08,/market/fact-5m,True,0,
+TATN,2026-05-08,/market/daily-summary,True,0,
+TATN,2026-05-09,/market/intraday,True,0,
+TATN,2026-05-09,/market/fact-5m,True,0,
+TATN,2026-05-09,/market/daily-summary,True,0,
+TATN,2026-05-10,/market/intraday,True,0,
+TATN,2026-05-10,/market/fact-5m,True,0,
+TATN,2026-05-10,/market/daily-summary,True,0,
+TATN,2026-05-11,/market/intraday,True,0,
+TATN,2026-05-11,/market/fact-5m,True,0,
+TATN,2026-05-11,/market/daily-summary,True,0,
+TATN,2026-05-12,/market/intraday,True,0,
+TATN,2026-05-12,/market/fact-5m,True,0,
+TATN,2026-05-12,/market/daily-summary,True,0,
+TATN,2026-05-13,/market/intraday,True,0,
+TATN,2026-05-13,/market/fact-5m,True,0,
+TATN,2026-05-13,/market/daily-summary,True,0,
+TATN,2026-05-14,/market/intraday,True,0,
+TATN,2026-05-14,/market/fact-5m,True,0,
+TATN,2026-05-14,/market/daily-summary,True,0,
+TATN,2026-05-15,/market/intraday,True,0,
+TATN,2026-05-15,/market/fact-5m,True,0,
+TATN,2026-05-15,/market/daily-summary,True,0,
+TATN,2026-05-16,/market/intraday,True,0,
+TATN,2026-05-16,/market/fact-5m,True,0,
+TATN,2026-05-16,/market/daily-summary,True,0,
+TATN,2026-05-17,/market/intraday,True,0,
+TATN,2026-05-17,/market/fact-5m,True,0,
+TATN,2026-05-17,/market/daily-summary,True,0,
+TATN,2026-05-18,/market/intraday,True,0,
+TATN,2026-05-18,/market/fact-5m,True,0,
+TATN,2026-05-18,/market/daily-summary,True,0,
+TATN,2026-05-19,/market/intraday,True,0,
+TATN,2026-05-19,/market/fact-5m,True,0,
+TATN,2026-05-19,/market/daily-summary,True,0,
+TATN,2026-05-20,/market/intraday,True,0,
+TATN,2026-05-20,/market/fact-5m,True,0,
+TATN,2026-05-20,/market/daily-summary,True,0,
+TATN,2026-05-21,/market/intraday,True,0,
+TATN,2026-05-21,/market/fact-5m,True,0,
+TATN,2026-05-21,/market/daily-summary,True,0,
+TATN,2026-05-22,/market/intraday,True,0,
+TATN,2026-05-22,/market/fact-5m,True,0,
+TATN,2026-05-22,/market/daily-summary,True,0,
+TATN,2026-05-23,/market/intraday,True,0,
+TATN,2026-05-23,/market/fact-5m,True,0,
+TATN,2026-05-23,/market/daily-summary,True,0,
+TATN,2026-05-24,/market/intraday,True,0,
+TATN,2026-05-24,/market/fact-5m,True,0,
+TATN,2026-05-24,/market/daily-summary,True,0,
+TATN,2026-05-25,/market/intraday,True,0,
+TATN,2026-05-25,/market/fact-5m,True,0,
+TATN,2026-05-25,/market/daily-summary,True,0,
+VTBR,2026-05-01,/market/intraday,True,0,
+VTBR,2026-05-01,/market/fact-5m,True,0,
+VTBR,2026-05-01,/market/daily-summary,True,0,
+VTBR,2026-05-02,/market/intraday,True,0,
+VTBR,2026-05-02,/market/fact-5m,True,0,
+VTBR,2026-05-02,/market/daily-summary,True,0,
+VTBR,2026-05-03,/market/intraday,True,0,
+VTBR,2026-05-03,/market/fact-5m,True,0,
+VTBR,2026-05-03,/market/daily-summary,True,0,
+VTBR,2026-05-04,/market/intraday,True,0,
+VTBR,2026-05-04,/market/fact-5m,True,0,
+VTBR,2026-05-04,/market/daily-summary,True,0,
+VTBR,2026-05-05,/market/intraday,True,0,
+VTBR,2026-05-05,/market/fact-5m,True,0,
+VTBR,2026-05-05,/market/daily-summary,True,0,
+VTBR,2026-05-06,/market/intraday,True,0,
+VTBR,2026-05-06,/market/fact-5m,True,0,
+VTBR,2026-05-06,/market/daily-summary,True,0,
+VTBR,2026-05-07,/market/intraday,True,0,
+VTBR,2026-05-07,/market/fact-5m,True,0,
+VTBR,2026-05-07,/market/daily-summary,True,0,
+VTBR,2026-05-08,/market/intraday,True,0,
+VTBR,2026-05-08,/market/fact-5m,True,0,
+VTBR,2026-05-08,/market/daily-summary,True,0,
+VTBR,2026-05-09,/market/intraday,True,0,
+VTBR,2026-05-09,/market/fact-5m,True,0,
+VTBR,2026-05-09,/market/daily-summary,True,0,
+VTBR,2026-05-10,/market/intraday,True,0,
+VTBR,2026-05-10,/market/fact-5m,True,0,
+VTBR,2026-05-10,/market/daily-summary,True,0,
+VTBR,2026-05-11,/market/intraday,True,0,
+VTBR,2026-05-11,/market/fact-5m,True,0,
+VTBR,2026-05-11,/market/daily-summary,True,0,
+VTBR,2026-05-12,/market/intraday,True,0,
+VTBR,2026-05-12,/market/fact-5m,True,0,
+VTBR,2026-05-12,/market/daily-summary,True,0,
+VTBR,2026-05-13,/market/intraday,True,0,
+VTBR,2026-05-13,/market/fact-5m,True,0,
+VTBR,2026-05-13,/market/daily-summary,True,0,
+VTBR,2026-05-14,/market/intraday,True,0,
+VTBR,2026-05-14,/market/fact-5m,True,0,
+VTBR,2026-05-14,/market/daily-summary,True,0,
+VTBR,2026-05-15,/market/intraday,True,0,
+VTBR,2026-05-15,/market/fact-5m,True,0,
+VTBR,2026-05-15,/market/daily-summary,True,0,
+VTBR,2026-05-16,/market/intraday,True,0,
+VTBR,2026-05-16,/market/fact-5m,True,0,
+VTBR,2026-05-16,/market/daily-summary,True,0,
+VTBR,2026-05-17,/market/intraday,True,0,
+VTBR,2026-05-17,/market/fact-5m,True,0,
+VTBR,2026-05-17,/market/daily-summary,True,0,
+VTBR,2026-05-18,/market/intraday,True,0,
+VTBR,2026-05-18,/market/fact-5m,True,0,
+VTBR,2026-05-18,/market/daily-summary,True,0,
+VTBR,2026-05-19,/market/intraday,True,0,
+VTBR,2026-05-19,/market/fact-5m,True,0,
+VTBR,2026-05-19,/market/daily-summary,True,0,
+VTBR,2026-05-20,/market/intraday,True,0,
+VTBR,2026-05-20,/market/fact-5m,True,0,
+VTBR,2026-05-20,/market/daily-summary,True,0,
+VTBR,2026-05-21,/market/intraday,True,0,
+VTBR,2026-05-21,/market/fact-5m,True,0,
+VTBR,2026-05-21,/market/daily-summary,True,0,
+VTBR,2026-05-22,/market/intraday,True,0,
+VTBR,2026-05-22,/market/fact-5m,True,0,
+VTBR,2026-05-22,/market/daily-summary,True,0,
+VTBR,2026-05-23,/market/intraday,True,0,
+VTBR,2026-05-23,/market/fact-5m,True,0,
+VTBR,2026-05-23,/market/daily-summary,True,0,
+VTBR,2026-05-24,/market/intraday,True,0,
+VTBR,2026-05-24,/market/fact-5m,True,0,
+VTBR,2026-05-24,/market/daily-summary,True,0,
+VTBR,2026-05-25,/market/intraday,True,0,
+VTBR,2026-05-25,/market/fact-5m,True,0,
+VTBR,2026-05-25,/market/daily-summary,True,0,
+MOEX,2026-05-01,/market/intraday,True,0,
+MOEX,2026-05-01,/market/fact-5m,True,0,
+MOEX,2026-05-01,/market/daily-summary,True,0,
+MOEX,2026-05-02,/market/intraday,True,0,
+MOEX,2026-05-02,/market/fact-5m,True,0,
+MOEX,2026-05-02,/market/daily-summary,True,0,
+MOEX,2026-05-03,/market/intraday,True,0,
+MOEX,2026-05-03,/market/fact-5m,True,0,
+MOEX,2026-05-03,/market/daily-summary,True,0,
+MOEX,2026-05-04,/market/intraday,True,0,
+MOEX,2026-05-04,/market/fact-5m,True,0,
+MOEX,2026-05-04,/market/daily-summary,True,0,
+MOEX,2026-05-05,/market/intraday,True,0,
+MOEX,2026-05-05,/market/fact-5m,True,0,
+MOEX,2026-05-05,/market/daily-summary,True,0,
+MOEX,2026-05-06,/market/intraday,True,0,
+MOEX,2026-05-06,/market/fact-5m,True,0,
+MOEX,2026-05-06,/market/daily-summary,True,0,
+MOEX,2026-05-07,/market/intraday,True,0,
+MOEX,2026-05-07,/market/fact-5m,True,0,
+MOEX,2026-05-07,/market/daily-summary,True,0,
+MOEX,2026-05-08,/market/intraday,True,0,
+MOEX,2026-05-08,/market/fact-5m,True,0,
+MOEX,2026-05-08,/market/daily-summary,True,0,
+MOEX,2026-05-09,/market/intraday,True,0,
+MOEX,2026-05-09,/market/fact-5m,True,0,
+MOEX,2026-05-09,/market/daily-summary,True,0,
+MOEX,2026-05-10,/market/intraday,True,0,
+MOEX,2026-05-10,/market/fact-5m,True,0,
+MOEX,2026-05-10,/market/daily-summary,True,0,
+MOEX,2026-05-11,/market/intraday,True,0,
+MOEX,2026-05-11,/market/fact-5m,True,0,
+MOEX,2026-05-11,/market/daily-summary,True,0,
+MOEX,2026-05-12,/market/intraday,True,0,
+MOEX,2026-05-12,/market/fact-5m,True,0,
+MOEX,2026-05-12,/market/daily-summary,True,0,
+MOEX,2026-05-13,/market/intraday,True,0,
+MOEX,2026-05-13,/market/fact-5m,True,0,
+MOEX,2026-05-13,/market/daily-summary,True,0,
+MOEX,2026-05-14,/market/intraday,True,0,
+MOEX,2026-05-14,/market/fact-5m,True,0,
+MOEX,2026-05-14,/market/daily-summary,True,0,
+MOEX,2026-05-15,/market/intraday,True,0,
+MOEX,2026-05-15,/market/fact-5m,True,0,
+MOEX,2026-05-15,/market/daily-summary,True,0,
+MOEX,2026-05-16,/market/intraday,True,0,
+MOEX,2026-05-16,/market/fact-5m,True,0,
+MOEX,2026-05-16,/market/daily-summary,True,0,
+MOEX,2026-05-17,/market/intraday,True,0,
+MOEX,2026-05-17,/market/fact-5m,True,0,
+MOEX,2026-05-17,/market/daily-summary,True,0,
+MOEX,2026-05-18,/market/intraday,True,0,
+MOEX,2026-05-18,/market/fact-5m,True,0,
+MOEX,2026-05-18,/market/daily-summary,True,0,
+MOEX,2026-05-19,/market/intraday,True,0,
+MOEX,2026-05-19,/market/fact-5m,True,0,
+MOEX,2026-05-19,/market/daily-summary,True,0,
+MOEX,2026-05-20,/market/intraday,True,0,
+MOEX,2026-05-20,/market/fact-5m,True,0,
+MOEX,2026-05-20,/market/daily-summary,True,0,
+MOEX,2026-05-21,/market/intraday,True,0,
+MOEX,2026-05-21,/market/fact-5m,True,0,
+MOEX,2026-05-21,/market/daily-summary,True,0,
+MOEX,2026-05-22,/market/intraday,True,0,
+MOEX,2026-05-22,/market/fact-5m,True,0,
+MOEX,2026-05-22,/market/daily-summary,True,0,
+MOEX,2026-05-23,/market/intraday,True,0,
+MOEX,2026-05-23,/market/fact-5m,True,0,
+MOEX,2026-05-23,/market/daily-summary,True,0,
+MOEX,2026-05-24,/market/intraday,True,5000,
+MOEX,2026-05-24,/market/fact-5m,True,5000,
+MOEX,2026-05-24,/market/daily-summary,True,1,
+MOEX,2026-05-25,/market/intraday,True,0,
+MOEX,2026-05-25,/market/fact-5m,True,0,
+MOEX,2026-05-25,/market/daily-summary,True,0,
+AFLT,2026-05-01,/market/intraday,True,0,
+AFLT,2026-05-01,/market/fact-5m,True,0,
+AFLT,2026-05-01,/market/daily-summary,True,0,
+AFLT,2026-05-02,/market/intraday,True,0,
+AFLT,2026-05-02,/market/fact-5m,True,0,
+AFLT,2026-05-02,/market/daily-summary,True,0,
+AFLT,2026-05-03,/market/intraday,True,0,
+AFLT,2026-05-03,/market/fact-5m,True,0,
+AFLT,2026-05-03,/market/daily-summary,True,0,
+AFLT,2026-05-04,/market/intraday,True,0,
+AFLT,2026-05-04,/market/fact-5m,True,0,
+AFLT,2026-05-04,/market/daily-summary,True,0,
+AFLT,2026-05-05,/market/intraday,True,0,
+AFLT,2026-05-05,/market/fact-5m,True,0,
+AFLT,2026-05-05,/market/daily-summary,True,0,
+AFLT,2026-05-06,/market/intraday,True,0,
+AFLT,2026-05-06,/market/fact-5m,True,0,
+AFLT,2026-05-06,/market/daily-summary,True,0,
+AFLT,2026-05-07,/market/intraday,True,0,
+AFLT,2026-05-07,/market/fact-5m,True,0,
+AFLT,2026-05-07,/market/daily-summary,True,0,
+AFLT,2026-05-08,/market/intraday,True,0,
+AFLT,2026-05-08,/market/fact-5m,True,0,
+AFLT,2026-05-08,/market/daily-summary,True,0,
+AFLT,2026-05-09,/market/intraday,True,0,
+AFLT,2026-05-09,/market/fact-5m,True,0,
+AFLT,2026-05-09,/market/daily-summary,True,0,
+AFLT,2026-05-10,/market/intraday,True,0,
+AFLT,2026-05-10,/market/fact-5m,True,0,
+AFLT,2026-05-10,/market/daily-summary,True,0,
+AFLT,2026-05-11,/market/intraday,True,0,
+AFLT,2026-05-11,/market/fact-5m,True,0,
+AFLT,2026-05-11,/market/daily-summary,True,0,
+AFLT,2026-05-12,/market/intraday,True,0,
+AFLT,2026-05-12,/market/fact-5m,True,0,
+AFLT,2026-05-12,/market/daily-summary,True,0,
+AFLT,2026-05-13,/market/intraday,True,0,
+AFLT,2026-05-13,/market/fact-5m,True,0,
+AFLT,2026-05-13,/market/daily-summary,True,0,
+AFLT,2026-05-14,/market/intraday,True,0,
+AFLT,2026-05-14,/market/fact-5m,True,0,
+AFLT,2026-05-14,/market/daily-summary,True,0,
+AFLT,2026-05-15,/market/intraday,True,0,
+AFLT,2026-05-15,/market/fact-5m,True,0,
+AFLT,2026-05-15,/market/daily-summary,True,0,
+AFLT,2026-05-16,/market/intraday,True,0,
+AFLT,2026-05-16,/market/fact-5m,True,0,
+AFLT,2026-05-16,/market/daily-summary,True,0,
+AFLT,2026-05-17,/market/intraday,True,0,
+AFLT,2026-05-17,/market/fact-5m,True,0,
+AFLT,2026-05-17,/market/daily-summary,True,0,
+AFLT,2026-05-18,/market/intraday,True,0,
+AFLT,2026-05-18,/market/fact-5m,True,0,
+AFLT,2026-05-18,/market/daily-summary,True,0,
+AFLT,2026-05-19,/market/intraday,True,0,
+AFLT,2026-05-19,/market/fact-5m,True,0,
+AFLT,2026-05-19,/market/daily-summary,True,0,
+AFLT,2026-05-20,/market/intraday,True,0,
+AFLT,2026-05-20,/market/fact-5m,True,0,
+AFLT,2026-05-20,/market/daily-summary,True,0,
+AFLT,2026-05-21,/market/intraday,True,0,
+AFLT,2026-05-21,/market/fact-5m,True,0,
+AFLT,2026-05-21,/market/daily-summary,True,0,
+AFLT,2026-05-22,/market/intraday,True,0,
+AFLT,2026-05-22,/market/fact-5m,True,0,
+AFLT,2026-05-22,/market/daily-summary,True,0,
+AFLT,2026-05-23,/market/intraday,True,0,
+AFLT,2026-05-23,/market/fact-5m,True,0,
+AFLT,2026-05-23,/market/daily-summary,True,0,
+AFLT,2026-05-24,/market/intraday,True,31,
+AFLT,2026-05-24,/market/fact-5m,True,31,
+AFLT,2026-05-24,/market/daily-summary,True,1,
+AFLT,2026-05-25,/market/intraday,True,0,
+AFLT,2026-05-25,/market/fact-5m,True,0,
+AFLT,2026-05-25,/market/daily-summary,True,0,
+ALRS,2026-05-01,/market/intraday,True,0,
+ALRS,2026-05-01,/market/fact-5m,True,0,
+ALRS,2026-05-01,/market/daily-summary,True,0,
+ALRS,2026-05-02,/market/intraday,True,0,
+ALRS,2026-05-02,/market/fact-5m,True,0,
+ALRS,2026-05-02,/market/daily-summary,True,0,
+ALRS,2026-05-03,/market/intraday,True,0,
+ALRS,2026-05-03,/market/fact-5m,True,0,
+ALRS,2026-05-03,/market/daily-summary,True,0,
+ALRS,2026-05-04,/market/intraday,True,0,
+ALRS,2026-05-04,/market/fact-5m,True,0,
+ALRS,2026-05-04,/market/daily-summary,True,0,
+ALRS,2026-05-05,/market/intraday,True,0,
+ALRS,2026-05-05,/market/fact-5m,True,0,
+ALRS,2026-05-05,/market/daily-summary,True,0,
+ALRS,2026-05-06,/market/intraday,True,0,
+ALRS,2026-05-06,/market/fact-5m,True,0,
+ALRS,2026-05-06,/market/daily-summary,True,0,
+ALRS,2026-05-07,/market/intraday,True,0,
+ALRS,2026-05-07,/market/fact-5m,True,0,
+ALRS,2026-05-07,/market/daily-summary,True,0,
+ALRS,2026-05-08,/market/intraday,True,0,
+ALRS,2026-05-08,/market/fact-5m,True,0,
+ALRS,2026-05-08,/market/daily-summary,True,0,
+ALRS,2026-05-09,/market/intraday,True,0,
+ALRS,2026-05-09,/market/fact-5m,True,0,
+ALRS,2026-05-09,/market/daily-summary,True,0,
+ALRS,2026-05-10,/market/intraday,True,0,
+ALRS,2026-05-10,/market/fact-5m,True,0,
+ALRS,2026-05-10,/market/daily-summary,True,0,
+ALRS,2026-05-11,/market/intraday,True,0,
+ALRS,2026-05-11,/market/fact-5m,True,0,
+ALRS,2026-05-11,/market/daily-summary,True,0,
+ALRS,2026-05-12,/market/intraday,True,0,
+ALRS,2026-05-12,/market/fact-5m,True,0,
+ALRS,2026-05-12,/market/daily-summary,True,0,
+ALRS,2026-05-13,/market/intraday,True,0,
+ALRS,2026-05-13,/market/fact-5m,True,0,
+ALRS,2026-05-13,/market/daily-summary,True,0,
+ALRS,2026-05-14,/market/intraday,True,0,
+ALRS,2026-05-14,/market/fact-5m,True,0,
+ALRS,2026-05-14,/market/daily-summary,True,0,
+ALRS,2026-05-15,/market/intraday,True,0,
+ALRS,2026-05-15,/market/fact-5m,True,0,
+ALRS,2026-05-15,/market/daily-summary,True,0,
+ALRS,2026-05-16,/market/intraday,True,0,
+ALRS,2026-05-16,/market/fact-5m,True,0,
+ALRS,2026-05-16,/market/daily-summary,True,0,
+ALRS,2026-05-17,/market/intraday,True,0,
+ALRS,2026-05-17,/market/fact-5m,True,0,
+ALRS,2026-05-17,/market/daily-summary,True,0,
+ALRS,2026-05-18,/market/intraday,True,0,
+ALRS,2026-05-18,/market/fact-5m,True,0,
+ALRS,2026-05-18,/market/daily-summary,True,0,
+ALRS,2026-05-19,/market/intraday,True,0,
+ALRS,2026-05-19,/market/fact-5m,True,0,
+ALRS,2026-05-19,/market/daily-summary,True,0,
+ALRS,2026-05-20,/market/intraday,True,0,
+ALRS,2026-05-20,/market/fact-5m,True,0,
+ALRS,2026-05-20,/market/daily-summary,True,0,
+ALRS,2026-05-21,/market/intraday,True,0,
+ALRS,2026-05-21,/market/fact-5m,True,0,
+ALRS,2026-05-21,/market/daily-summary,True,0,
+ALRS,2026-05-22,/market/intraday,True,0,
+ALRS,2026-05-22,/market/fact-5m,True,0,
+ALRS,2026-05-22,/market/daily-summary,True,0,
+ALRS,2026-05-23,/market/intraday,True,0,
+ALRS,2026-05-23,/market/fact-5m,True,0,
+ALRS,2026-05-23,/market/daily-summary,True,0,
+ALRS,2026-05-24,/market/intraday,True,31,
+ALRS,2026-05-24,/market/fact-5m,True,31,
+ALRS,2026-05-24,/market/daily-summary,True,1,
+ALRS,2026-05-25,/market/intraday,True,0,
+ALRS,2026-05-25,/market/fact-5m,True,0,
+ALRS,2026-05-25,/market/daily-summary,True,0,
+MAGN,2026-05-01,/market/intraday,True,0,
+MAGN,2026-05-01,/market/fact-5m,True,0,
+MAGN,2026-05-01,/market/daily-summary,True,0,
+MAGN,2026-05-02,/market/intraday,True,0,
+MAGN,2026-05-02,/market/fact-5m,True,0,
+MAGN,2026-05-02,/market/daily-summary,True,0,
+MAGN,2026-05-03,/market/intraday,True,0,
+MAGN,2026-05-03,/market/fact-5m,True,0,
+MAGN,2026-05-03,/market/daily-summary,True,0,
+MAGN,2026-05-04,/market/intraday,True,0,
+MAGN,2026-05-04,/market/fact-5m,True,0,
+MAGN,2026-05-04,/market/daily-summary,True,0,
+MAGN,2026-05-05,/market/intraday,True,0,
+MAGN,2026-05-05,/market/fact-5m,True,0,
+MAGN,2026-05-05,/market/daily-summary,True,0,
+MAGN,2026-05-06,/market/intraday,True,0,
+MAGN,2026-05-06,/market/fact-5m,True,0,
+MAGN,2026-05-06,/market/daily-summary,True,0,
+MAGN,2026-05-07,/market/intraday,True,0,
+MAGN,2026-05-07,/market/fact-5m,True,0,
+MAGN,2026-05-07,/market/daily-summary,True,0,
+MAGN,2026-05-08,/market/intraday,True,0,
+MAGN,2026-05-08,/market/fact-5m,True,0,
+MAGN,2026-05-08,/market/daily-summary,True,0,
+MAGN,2026-05-09,/market/intraday,True,0,
+MAGN,2026-05-09,/market/fact-5m,True,0,
+MAGN,2026-05-09,/market/daily-summary,True,0,
+MAGN,2026-05-10,/market/intraday,True,0,
+MAGN,2026-05-10,/market/fact-5m,True,0,
+MAGN,2026-05-10,/market/daily-summary,True,0,
+MAGN,2026-05-11,/market/intraday,True,0,
+MAGN,2026-05-11,/market/fact-5m,True,0,
+MAGN,2026-05-11,/market/daily-summary,True,0,
+MAGN,2026-05-12,/market/intraday,True,0,
+MAGN,2026-05-12,/market/fact-5m,True,0,
+MAGN,2026-05-12,/market/daily-summary,True,0,
+MAGN,2026-05-13,/market/intraday,True,0,
+MAGN,2026-05-13,/market/fact-5m,True,0,
+MAGN,2026-05-13,/market/daily-summary,True,0,
+MAGN,2026-05-14,/market/intraday,True,0,
+MAGN,2026-05-14,/market/fact-5m,True,0,
+MAGN,2026-05-14,/market/daily-summary,True,0,
+MAGN,2026-05-15,/market/intraday,True,0,
+MAGN,2026-05-15,/market/fact-5m,True,0,
+MAGN,2026-05-15,/market/daily-summary,True,0,
+MAGN,2026-05-16,/market/intraday,True,0,
+MAGN,2026-05-16,/market/fact-5m,True,0,
+MAGN,2026-05-16,/market/daily-summary,True,0,
+MAGN,2026-05-17,/market/intraday,True,0,
+MAGN,2026-05-17,/market/fact-5m,True,0,
+MAGN,2026-05-17,/market/daily-summary,True,0,
+MAGN,2026-05-18,/market/intraday,True,0,
+MAGN,2026-05-18,/market/fact-5m,True,0,
+MAGN,2026-05-18,/market/daily-summary,True,0,
+MAGN,2026-05-19,/market/intraday,True,0,
+MAGN,2026-05-19,/market/fact-5m,True,0,
+MAGN,2026-05-19,/market/daily-summary,True,0,
+MAGN,2026-05-20,/market/intraday,True,0,
+MAGN,2026-05-20,/market/fact-5m,True,0,
+MAGN,2026-05-20,/market/daily-summary,True,0,
+MAGN,2026-05-21,/market/intraday,True,0,
+MAGN,2026-05-21,/market/fact-5m,True,0,
+MAGN,2026-05-21,/market/daily-summary,True,0,
+MAGN,2026-05-22,/market/intraday,True,0,
+MAGN,2026-05-22,/market/fact-5m,True,0,
+MAGN,2026-05-22,/market/daily-summary,True,0,
+MAGN,2026-05-23,/market/intraday,True,0,
+MAGN,2026-05-23,/market/fact-5m,True,0,
+MAGN,2026-05-23,/market/daily-summary,True,0,
+MAGN,2026-05-24,/market/intraday,True,0,
+MAGN,2026-05-24,/market/fact-5m,True,0,
+MAGN,2026-05-24,/market/daily-summary,True,0,
+MAGN,2026-05-25,/market/intraday,True,0,
+MAGN,2026-05-25,/market/fact-5m,True,0,
+MAGN,2026-05-25,/market/daily-summary,True,0,
+CHMF,2026-05-01,/market/intraday,True,0,
+CHMF,2026-05-01,/market/fact-5m,True,0,
+CHMF,2026-05-01,/market/daily-summary,True,0,
+CHMF,2026-05-02,/market/intraday,True,0,
+CHMF,2026-05-02,/market/fact-5m,True,0,
+CHMF,2026-05-02,/market/daily-summary,True,0,
+CHMF,2026-05-03,/market/intraday,True,0,
+CHMF,2026-05-03,/market/fact-5m,True,0,
+CHMF,2026-05-03,/market/daily-summary,True,0,
+CHMF,2026-05-04,/market/intraday,True,0,
+CHMF,2026-05-04,/market/fact-5m,True,0,
+CHMF,2026-05-04,/market/daily-summary,True,0,
+CHMF,2026-05-05,/market/intraday,True,0,
+CHMF,2026-05-05,/market/fact-5m,True,0,
+CHMF,2026-05-05,/market/daily-summary,True,0,
+CHMF,2026-05-06,/market/intraday,True,0,
+CHMF,2026-05-06,/market/fact-5m,True,0,
+CHMF,2026-05-06,/market/daily-summary,True,0,
+CHMF,2026-05-07,/market/intraday,True,0,
+CHMF,2026-05-07,/market/fact-5m,True,0,
+CHMF,2026-05-07,/market/daily-summary,True,0,
+CHMF,2026-05-08,/market/intraday,True,0,
+CHMF,2026-05-08,/market/fact-5m,True,0,
+CHMF,2026-05-08,/market/daily-summary,True,0,
+CHMF,2026-05-09,/market/intraday,True,0,
+CHMF,2026-05-09,/market/fact-5m,True,0,
+CHMF,2026-05-09,/market/daily-summary,True,0,
+CHMF,2026-05-10,/market/intraday,True,0,
+CHMF,2026-05-10,/market/fact-5m,True,0,
+CHMF,2026-05-10,/market/daily-summary,True,0,
+CHMF,2026-05-11,/market/intraday,True,0,
+CHMF,2026-05-11,/market/fact-5m,True,0,
+CHMF,2026-05-11,/market/daily-summary,True,0,
+CHMF,2026-05-12,/market/intraday,True,0,
+CHMF,2026-05-12,/market/fact-5m,True,0,
+CHMF,2026-05-12,/market/daily-summary,True,0,
+CHMF,2026-05-13,/market/intraday,True,0,
+CHMF,2026-05-13,/market/fact-5m,True,0,
+CHMF,2026-05-13,/market/daily-summary,True,0,
+CHMF,2026-05-14,/market/intraday,True,0,
+CHMF,2026-05-14,/market/fact-5m,True,0,
+CHMF,2026-05-14,/market/daily-summary,True,0,
+CHMF,2026-05-15,/market/intraday,True,0,
+CHMF,2026-05-15,/market/fact-5m,True,0,
+CHMF,2026-05-15,/market/daily-summary,True,0,
+CHMF,2026-05-16,/market/intraday,True,0,
+CHMF,2026-05-16,/market/fact-5m,True,0,
+CHMF,2026-05-16,/market/daily-summary,True,0,
+CHMF,2026-05-17,/market/intraday,True,0,
+CHMF,2026-05-17,/market/fact-5m,True,0,
+CHMF,2026-05-17,/market/daily-summary,True,0,
+CHMF,2026-05-18,/market/intraday,True,0,
+CHMF,2026-05-18,/market/fact-5m,True,0,
+CHMF,2026-05-18,/market/daily-summary,True,0,
+CHMF,2026-05-19,/market/intraday,True,0,
+CHMF,2026-05-19,/market/fact-5m,True,0,
+CHMF,2026-05-19,/market/daily-summary,True,0,
+CHMF,2026-05-20,/market/intraday,True,0,
+CHMF,2026-05-20,/market/fact-5m,True,0,
+CHMF,2026-05-20,/market/daily-summary,True,0,
+CHMF,2026-05-21,/market/intraday,True,0,
+CHMF,2026-05-21,/market/fact-5m,True,0,
+CHMF,2026-05-21,/market/daily-summary,True,0,
+CHMF,2026-05-22,/market/intraday,True,0,
+CHMF,2026-05-22,/market/fact-5m,True,0,
+CHMF,2026-05-22,/market/daily-summary,True,0,
+CHMF,2026-05-23,/market/intraday,True,0,
+CHMF,2026-05-23,/market/fact-5m,True,0,
+CHMF,2026-05-23,/market/daily-summary,True,0,
+CHMF,2026-05-24,/market/intraday,True,0,
+CHMF,2026-05-24,/market/fact-5m,True,0,
+CHMF,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CHMF,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CHMF,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CHMF,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+NLMK,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PLZL,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+YNDX,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-21,/market/fact-5m,False,0,HTTP Error 504: Gateway Time-out
+OZON,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+OZON,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+FIVE,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-15,/market/daily-summary,False,0,HTTP Error 504: Gateway Time-out
+PIKK,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PIKK,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MTSS,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+MGNT,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGS,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+SNGSP,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+IRAO,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RUAL,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+POLY,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+PHOR,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+RTKM,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-23,/market/daily-summary,False,0,HTTP Error 504: Gateway Time-out
+TRNFP,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+TRNFP,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-01,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-01,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-01,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-02,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-02,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-02,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-03,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-03,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-03,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-04,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-04,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-04,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-05,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-05,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-05,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-06,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-06,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-06,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-07,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-07,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-07,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-08,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-08,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-08,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-09,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-09,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-09,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-10,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-10,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-10,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-11,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-11,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-11,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-12,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-12,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-12,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-13,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-13,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-13,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-14,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-14,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-14,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-15,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-15,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-15,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-16,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-16,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-16,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-17,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-17,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-17,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-18,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-18,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-18,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-19,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-19,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-19,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-20,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-20,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-20,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-21,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-21,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-21,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-22,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-22,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-22,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-23,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-23,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-23,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-24,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-24,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-24,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-25,/market/intraday,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-25,/market/fact-5m,False,0,HTTP Error 503: Service Unavailable
+CBOM,2026-05-25,/market/daily-summary,False,0,HTTP Error 503: Service Unavailable

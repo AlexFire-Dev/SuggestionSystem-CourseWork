@@ -4,3 +4,5 @@
 logs/
 
 .env
+# ML local cache
+data/ml_cache/

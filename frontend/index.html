@@ -412,7 +412,7 @@
 
     const state = {
       secid: "SBER",
-      tradeDate: "2026-05-22",
+      tradeDate: "2026-05-24",
       minCriticality: 0.3,
       loading: false,
       warning: "",
@@ -420,7 +420,8 @@
       news: [],
       selectedNewsId: null,
       market: [],
-      summary: null
+      summary: null,
+      nnModel: null
     };
 
     window.onerror = function(message, source, lineno, colno, error) {
@@ -743,6 +744,104 @@
       };
     }
 
+
+    async function loadStaticIntraday(secid, tradeDate) {
+      const fileName = `/models/intraday_${encodeURIComponent(secid)}_${tradeDate}.json?ts=${Date.now()}`;
+
+      try {
+        const response = await fetch(fileName);
+
+        if (!response.ok) {
+          return [];
+        }
+
+        const data = await response.json();
+
+        return Array.isArray(data) ? data : [];
+      } catch (error) {
+        console.warn("Static intraday fallback failed", error);
+        return [];
+      }
+    }
+
+
+    function uniqueNewsRows(rows) {
+      const seen = new Set();
+      const result = [];
+
+      rows.forEach(item => {
+        const key = `${item.news_id || item.id || item.title}-${item.secid || ""}`;
+
+        if (!seen.has(key)) {
+          seen.add(key);
+          result.push(item);
+        }
+      });
+
+      return result;
+    }
+
+    function alignNewsRowsToMarketDate(rows, tradeDate) {
+      return rows.map((item, index) => {
+        const originalDate = item.published_date;
+        const originalTime = item.published_time;
+        const originalAt = item.published_at;
+
+        const totalMinutes = 10 * 60 + 15 + index * 20;
+        const hour = String(Math.floor(totalMinutes / 60)).padStart(2, "0");
+        const minute = String(totalMinutes % 60).padStart(2, "0");
+        const alignedTime = `${hour}:${minute}:00`;
+
+        return {
+          ...item,
+          original_published_date: originalDate,
+          original_published_time: originalTime,
+          original_published_at: originalAt,
+          published_date: tradeDate,
+          published_time: alignedTime,
+          published_at: `${tradeDate}T${alignedTime}`,
+          event_type: item.event_type || "historical_news",
+          reason:
+            (item.reason || "Historical ticker-related news from backend.") +
+            ` Original publication date: ${originalDate || "unknown"} ${originalTime || ""}. ` +
+            "For event-window visualization it is aligned to the selected trading date."
+        };
+      });
+    }
+
+    function newsDateLine(item) {
+      if (item.original_published_date) {
+        return `${escapeHtml(item.published_date)} ${escapeHtml(item.published_time || "time n/a")} · orig ${escapeHtml(item.original_published_date)} ${escapeHtml(item.original_published_time || "")}`;
+      }
+
+      return `${escapeHtml(item.published_date)} ${escapeHtml(item.published_time || "time n/a")}`;
+    }
+
+    function normalizeSeriesForChart(rows, fields) {
+      const result = rows.map(row => ({ ...row }));
+
+      fields.forEach(field => {
+        const values = rows
+          .map(row => Number(row[field]))
+          .filter(Number.isFinite);
+
+        if (!values.length) {
+          return;
+        }
+
+        const mean = values.reduce((sum, value) => sum + value, 0) / values.length;
+        const variance = values.reduce((sum, value) => sum + (value - mean) ** 2, 0) / values.length;
+        const std = Math.sqrt(variance) || 1;
+
+        result.forEach(row => {
+          const value = Number(row[field]);
+          row[`${field}_z`] = Number.isFinite(value) ? (value - mean) / std : null;
+        });
+      });
+
+      return result;
+    }
+
     async function loadNewsData(secid, tradeDate, minCriticality) {
       const criticality = await safeFetch("/news/criticality", {
         secid,
@@ -750,33 +849,76 @@
         to_date: tradeDate,
         min_criticality: minCriticality,
         limit: 100
-      });
+      }, 12000);
 
-      if (criticality.ok && Array.isArray(criticality.data)) {
+      if (criticality.ok && Array.isArray(criticality.data) && criticality.data.length > 0) {
         return {
-          data: criticality.data,
+          data: uniqueNewsRows(criticality.data),
           warning: ""
         };
       }
 
-      const candidates = await safeFetch("/news/company-candidates", {
+      const sameDateCandidates = await safeFetch("/news/company-candidates", {
         secid,
         from_date: tradeDate,
         to_date: tradeDate,
         min_score: minCriticality,
         limit: 100
-      });
+      }, 12000);
 
-      if (candidates.ok && Array.isArray(candidates.data)) {
+      if (sameDateCandidates.ok && Array.isArray(sameDateCandidates.data) && sameDateCandidates.data.length > 0) {
         return {
-          data: candidates.data.map(item => mapCandidate(item, secid)),
-          warning: "LLM criticality endpoint is unavailable. Showing ticker-matching fallback."
+          data: uniqueNewsRows(sameDateCandidates.data.map(item => mapCandidate(item, secid))),
+          warning: "LLM criticality is unavailable. Showing ticker-matching candidates for selected date."
+        };
+      }
+
+      const sameDateEvents = await safeFetch("/news/events", {
+        secid,
+        from_date: tradeDate,
+        to_date: tradeDate,
+        limit: 100
+      }, 12000);
+
+      if (sameDateEvents.ok && Array.isArray(sameDateEvents.data) && sameDateEvents.data.length > 0) {
+        return {
+          data: uniqueNewsRows(sameDateEvents.data.map(item => mapRawNewsEvent(item, secid))),
+          warning: "LLM criticality is unavailable. Showing raw news events for selected date."
+        };
+      }
+
+      const latestCandidates = await safeFetch("/news/company-candidates", {
+        secid,
+        min_score: minCriticality,
+        limit: 100
+      }, 12000);
+
+      if (latestCandidates.ok && Array.isArray(latestCandidates.data) && latestCandidates.data.length > 0) {
+        const mapped = uniqueNewsRows(latestCandidates.data.map(item => mapCandidate(item, secid)));
+
+        return {
+          data: alignNewsRowsToMarketDate(mapped, tradeDate),
+          warning: "No news found for selected market date. Showing latest historical ticker-related news aligned to the selected market window."
+        };
+      }
+
+      const latestEvents = await safeFetch("/news/events", {
+        secid,
+        limit: 100
+      }, 12000);
+
+      if (latestEvents.ok && Array.isArray(latestEvents.data) && latestEvents.data.length > 0) {
+        const mapped = uniqueNewsRows(latestEvents.data.map(item => mapRawNewsEvent(item, secid)));
+
+        return {
+          data: alignNewsRowsToMarketDate(mapped, tradeDate),
+          warning: "No ticker candidates found. Showing latest raw news aligned to the selected market window."
         };
       }
 
       return {
         data: makeDemoNews(secid, tradeDate),
-        warning: "Remote news endpoints are unavailable. Showing demo news while using market data."
+        warning: "News endpoints returned no usable data. Showing demo news while using market data."
       };
     }
 
@@ -851,8 +993,15 @@
       if (intraday.ok && Array.isArray(intraday.data) && intraday.data.length > 0) {
         state.market = intraday.data;
       } else {
-        state.market = makeDemoMarket(state.secid, state.tradeDate);
-        warnings.push("Intraday endpoint failed or returned no data. Showing demo market data.");
+        const staticIntraday = await loadStaticIntraday(state.secid, state.tradeDate);
+
+        if (staticIntraday.length > 0) {
+          state.market = staticIntraday;
+          warnings.push("Remote intraday endpoint returned no data. Showing cached SBER intraday dataset.");
+        } else {
+          state.market = makeDemoMarket(state.secid, state.tradeDate);
+          warnings.push("Intraday endpoint failed or returned no data. Showing demo market data.");
+        }
       }
 
       state.summary = computeSummary(state.secid, state.tradeDate, state.market);
@@ -967,7 +1116,7 @@
               <span class="badge">rel ${formatPercent(item.relevance_score)}</span>
             </div>
             <strong>${escapeHtml(item.title || "No title")}</strong>
-            <small>${escapeHtml(item.published_date)} ${escapeHtml(item.published_time || "time n/a")} · ${escapeHtml(item.event_type || "event n/a")} · ${escapeHtml(item.sentiment || "sentiment n/a")}</small>
+            <small>${newsDateLine(item)} · ${escapeHtml(item.event_type || "event n/a")} · ${escapeHtml(item.sentiment || "sentiment n/a")}</small>
             <p>${escapeHtml(item.reason || "")}</p>
           </button>
         `).join("")
@@ -1136,7 +1285,7 @@
 
               <div class="card">
                 <div class="section-title-row">
-                  <h2>Intraday market states</h2>
+                  <h2>Intraday normalized market dynamics</h2>
                   <span class="badge">${state.market.length} intervals</span>
                 </div>
 
@@ -1171,15 +1320,200 @@
         { key: "trade_direction_imbalance", label: "Trade direction" }
       ], "rel_min");
 
-      const intradayRows = state.market.map((row, idx) => ({ ...row, idx }));
+      const intradayRows = normalizeSeriesForChart(
+        state.market.map((row, idx) => ({ ...row, idx })),
+        ["pr_close", "spread_bbo", "book_vol_imbalance", "trade_direction_imbalance", "trades"]
+      );
+
       drawChart("intraday-chart", intradayRows, [
-        { key: "spread_bbo", label: "Spread BBO" },
-        { key: "book_vol_imbalance", label: "Book imbalance" }
+        { key: "pr_close_z", label: "Price close z-score" },
+        { key: "spread_bbo_z", label: "Spread z-score" },
+        { key: "book_vol_imbalance_z", label: "Book imbalance z-score" },
+        { key: "trade_direction_imbalance_z", label: "Trade direction z-score" },
+        { key: "trades_z", label: "Trades z-score" }
       ], "idx");
     }
 
-    render();
-    loadData();
+
+    async function loadNNModel() {
+      try {
+        const response = await fetch(`/models/market_sentiment_nn.json?ts=${Date.now()}`);
+
+        if (!response.ok) {
+          throw new Error(`model HTTP ${response.status}`);
+        }
+
+        const model = await response.json();
+
+        if (model && model.type === "mlp_market_sentiment") {
+          state.nnModel = model;
+          console.info("Loaded trained market sentiment neural network", model.training);
+        }
+      } catch (error) {
+        console.warn("Neural model is unavailable, fallback baseline will be used", error);
+        state.nnModel = null;
+      }
+    }
+
+    function nnFeatureValue(name, row, prevRow) {
+      const stateName = String(row.market_state || "");
+
+      if (name === "spread_bbo") return Number(row.spread_bbo || 0);
+      if (name === "book_vol_imbalance") return Number(row.book_vol_imbalance || 0);
+      if (name === "trade_direction_imbalance") return Number(row.trade_direction_imbalance || 0);
+      if (name === "log_trades") return Math.log1p(Number(row.trades || 0));
+
+      if (name === "state_liquidity_stress") return stateName === "liquidity_stress" ? 1 : 0;
+      if (name === "state_active_cancellations") return stateName === "active_cancellations" ? 1 : 0;
+      if (name === "state_buy_pressure") return stateName === "buy_pressure" ? 1 : 0;
+      if (name === "state_sell_pressure") return stateName === "sell_pressure" ? 1 : 0;
+
+      if (name === "spread_delta") {
+        return Number(row.spread_bbo || 0) - Number(prevRow.spread_bbo || 0);
+      }
+
+      if (name === "book_imbalance_delta") {
+        return Number(row.book_vol_imbalance || 0) - Number(prevRow.book_vol_imbalance || 0);
+      }
+
+      if (name === "trade_direction_delta") {
+        return Number(row.trade_direction_imbalance || 0) - Number(prevRow.trade_direction_imbalance || 0);
+      }
+
+      return 0;
+    }
+
+    function nnSoftmax(values) {
+      const maxValue = Math.max(...values);
+      const expValues = values.map(value => Math.exp(value - maxValue));
+      const total = expValues.reduce((sum, value) => sum + value, 0);
+
+      return expValues.map(value => value / total);
+    }
+
+    function runNNForRow(model, row, prevRow) {
+      const mean = model.normalization.mean;
+      const std = model.normalization.std;
+      const names = model.feature_names;
+
+      const x = names.map((name, idx) => {
+        const raw = nnFeatureValue(name, row, prevRow || row);
+        return (raw - mean[idx]) / std[idx];
+      });
+
+      const w1 = model.weights.w1;
+      const b1 = model.weights.b1;
+      const w2 = model.weights.w2;
+      const b2 = model.weights.b2;
+
+      const hidden = b1.map((bias, hiddenIdx) => {
+        let value = bias;
+
+        for (let featureIdx = 0; featureIdx < x.length; featureIdx += 1) {
+          value += x[featureIdx] * w1[featureIdx][hiddenIdx];
+        }
+
+        return Math.tanh(value);
+      });
+
+      const logits = b2.map((bias, classIdx) => {
+        let value = bias;
+
+        for (let hiddenIdx = 0; hiddenIdx < hidden.length; hiddenIdx += 1) {
+          value += hidden[hiddenIdx] * w2[hiddenIdx][classIdx];
+        }
+
+        return value;
+      });
+
+      return nnSoftmax(logits);
+    }
+
+    function runNeuralSentimentModel(marketRows, newsRows, summary) {
+      const model = state.nnModel;
+
+      if (!model || !marketRows.length) {
+        return null;
+      }
+
+      const recent = marketRows.slice(-12);
+      const classProbs = new Array(model.classes.length).fill(0);
+
+      recent.forEach((row, idx) => {
+        const absoluteIdx = Math.max(0, marketRows.length - recent.length + idx);
+        const prevRow = marketRows[Math.max(0, absoluteIdx - 1)];
+        const probs = runNNForRow(model, row, prevRow);
+
+        probs.forEach((value, classIdx) => {
+          classProbs[classIdx] += value / recent.length;
+        });
+      });
+
+      let bestIdx = 0;
+
+      for (let idx = 1; idx < classProbs.length; idx += 1) {
+        if (classProbs[idx] > classProbs[bestIdx]) {
+          bestIdx = idx;
+        }
+      }
+
+      const label = model.classes[bestIdx];
+      const score = model.classes.reduce((sum, className, idx) => {
+        return sum + classProbs[idx] * Number(model.class_scores[className] || 0);
+      }, 0);
+
+      const recentSpread = meanNumber(recent, "spread_bbo");
+      const avgSpread = Number(summary && summary.avg_spread_bbo) || meanNumber(marketRows, "spread_bbo") || 1;
+      const spreadPressure = clamp((recentSpread - avgSpread) / Math.max(avgSpread, 0.0001), -1, 1);
+
+      return {
+        label,
+        score: clamp(score, -1, 1),
+        confidence: clamp(classProbs[bestIdx], 0, 0.99),
+        spreadPressure,
+        bookImbalance: clamp(meanNumber(recent, "book_vol_imbalance"), -1, 1),
+        tradeDirection: clamp(meanNumber(recent, "trade_direction_imbalance"), -1, 1),
+        stressRatio: recent.filter(row => row.market_state === "liquidity_stress").length / recent.length,
+        newsImpact: computeNewsImpact(newsRows),
+        description:
+          `Trained MLP neural network v${model.version}. ` +
+          `Train acc: ${Number(model.training.train_accuracy).toFixed(2)}, ` +
+          `valid acc: ${Number(model.training.valid_accuracy).toFixed(2)}.`
+      };
+    }
+
+    const baselineComputeMarketSentiment =
+      typeof computeMarketSentiment === "function" ? computeMarketSentiment : null;
+
+    computeMarketSentiment = function(marketRows, newsRows, summary) {
+      const neuralResult = runNeuralSentimentModel(marketRows, newsRows, summary);
+
+      if (neuralResult) {
+        return neuralResult;
+      }
+
+      if (baselineComputeMarketSentiment) {
+        return baselineComputeMarketSentiment(marketRows, newsRows, summary);
+      }
+
+      return {
+        label: "unknown",
+        score: 0,
+        confidence: 0,
+        spreadPressure: 0,
+        bookImbalance: 0,
+        tradeDirection: 0,
+        stressRatio: 0,
+        newsImpact: 0,
+        description: "No neural model and no baseline model available."
+      };
+    };
+
+
+    loadNNModel().finally(() => {
+      render();
+      loadData();
+    });
   </script>
 </body>
 </html>
