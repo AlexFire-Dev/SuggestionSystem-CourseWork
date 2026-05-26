@@ -536,8 +536,8 @@
       return [
         {
           published_date: tradeDate,
-          published_time: "07:15:00",
-          published_at: `${tradeDate}T07:15:00`,
+          published_time: "10:15:00",
+          published_at: `${tradeDate}T10:15:00`,
           news_id: `demo-${secid}-${tradeDate}-1`,
           secid,
           title: `${secid}: демонстрационная новость с высокой критичностью`,
@@ -550,8 +550,8 @@
         },
         {
           published_date: tradeDate,
-          published_time: "07:35:00",
-          published_at: `${tradeDate}T07:35:00`,
+          published_time: "10:35:00",
+          published_at: `${tradeDate}T10:35:00`,
           news_id: `demo-${secid}-${tradeDate}-2`,
           secid,
           title: `${secid}: демонстрационная новость средней критичности`,
@@ -594,6 +594,74 @@
       }
 
       return rows;
+    }
+
+
+    function normalizeMarketRows(rows) {
+      const groups = new Map();
+
+      rows.forEach(row => {
+        const key = row.event_time || `${row.trade_date}T${row.trade_time}`;
+
+        if (!key) {
+          return;
+        }
+
+        if (!groups.has(key)) {
+          groups.set(key, []);
+        }
+
+        groups.get(key).push(row);
+      });
+
+      const numericFields = [
+        "spread_bbo",
+        "spread_lv10",
+        "spread_1mio",
+        "book_vol_imbalance",
+        "trade_direction_imbalance",
+        "trades",
+        "trade_vol",
+        "trade_val",
+        "pr_close",
+        "pr_change"
+      ];
+
+      const result = Array.from(groups.entries()).map(([key, items]) => {
+        const base = { ...items[0] };
+
+        numericFields.forEach(field => {
+          const values = items
+            .map(item => Number(item[field]))
+            .filter(Number.isFinite);
+
+          if (values.length > 0) {
+            base[field] = values.reduce((sum, value) => sum + value, 0) / values.length;
+          }
+        });
+
+        const states = items.map(item => item.market_state).filter(Boolean);
+
+        if (states.includes("liquidity_stress")) {
+          base.market_state = "liquidity_stress";
+        } else if (states.includes("active_cancellations")) {
+          base.market_state = "active_cancellations";
+        } else if (states.length > 0) {
+          base.market_state = states[states.length - 1];
+        }
+
+        base.event_time = key;
+
+        if (!base.trade_time && key.includes("T")) {
+          base.trade_time = key.split("T")[1];
+        }
+
+        return base;
+      });
+
+      result.sort((left, right) => String(left.event_time).localeCompare(String(right.event_time)));
+
+      return result;
     }
 
     function computeSummary(secid, tradeDate, rows) {
@@ -714,6 +782,42 @@
       if (label === "bearish" || label === "stressed") return "badge bad";
       if (label === "neutral") return "badge info";
       return "badge";
+    }
+
+
+    function mapRawNewsEvent(item, fallbackSecid) {
+      const secid = item.secid || fallbackSecid;
+
+      const publishedDate =
+        item.published_date ||
+        item.date ||
+        (item.published_at ? String(item.published_at).slice(0, 10) : state.tradeDate);
+
+      const publishedTime =
+        item.published_time ||
+        item.time ||
+        (item.published_at && String(item.published_at).includes("T")
+          ? String(item.published_at).split("T")[1].slice(0, 8)
+          : null);
+
+      const publishedAt =
+        item.published_at ||
+        (publishedTime ? `${publishedDate}T${publishedTime}` : `${publishedDate}T10:15:00`);
+
+      return {
+        published_date: publishedDate,
+        published_time: publishedTime,
+        published_at: publishedAt,
+        news_id: item.news_id || item.id || `news-${secid}-${publishedDate}-${publishedTime || "no-time"}`,
+        secid,
+        title: item.title || item.article_title || "News event",
+        relevance_score: Number(item.match_score || item.relevance_score || 0.5),
+        criticality_score: Number(item.criticality_score || item.match_score || 0.5),
+        criticality_level: item.criticality_level || "unknown",
+        sentiment: item.sentiment || "unknown",
+        event_type: item.event_type || "raw_news",
+        reason: item.reason || item.body || "Raw news event from backend."
+      };
     }
 
     function candidateLevel(score) {
@@ -991,15 +1095,15 @@
       });
 
       if (intraday.ok && Array.isArray(intraday.data) && intraday.data.length > 0) {
-        state.market = intraday.data;
+        state.market = normalizeMarketRows(intraday.data);
       } else {
         const staticIntraday = await loadStaticIntraday(state.secid, state.tradeDate);
 
         if (staticIntraday.length > 0) {
-          state.market = staticIntraday;
+          state.market = normalizeMarketRows(staticIntraday);
           warnings.push("Remote intraday endpoint returned no data. Showing cached SBER intraday dataset.");
         } else {
-          state.market = makeDemoMarket(state.secid, state.tradeDate);
+          state.market = normalizeMarketRows(makeDemoMarket(state.secid, state.tradeDate));
           warnings.push("Intraday endpoint failed or returned no data. Showing demo market data.");
         }
       }
@@ -1236,8 +1340,7 @@
             </div>
 
             <p class="ml-explain">
-              Model v1 is an explainable baseline: positive trade direction and bid-side imbalance increase the score,
-              while wider spread and liquidity stress reduce it. News criticality slightly shifts the score according to event sentiment.
+              The dashboard uses a trained MLP neural model when model weights are available. The baseline explanation is kept as fallback logic for cases when the model file cannot be loaded.
             </p>
           </section>
 
